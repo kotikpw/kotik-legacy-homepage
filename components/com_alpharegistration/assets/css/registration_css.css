@@ -1,0 +1,191 @@
+.object_ok { 
+	border: 1px solid #00CC00;
+	border-top: 1px solid #006600; 
+	border-left: 1px solid #006600; 
+	color: #333333;
+} 
+.object_error{ 
+	border: 1px solid #990000; 
+	border-top: 1px solid #FF0000; 
+	border-left: 1px solid #FF0000; 
+	color: #999999; 
+}
+
+.pstrength-minchar {
+	font-size : 10px;
+}
+
+/*Step1*/
+#alpharegistration1 {
+	text-align: left;
+	margin: 0px auto;
+	padding: 0px;
+	border:0;
+	width: 100%;
+	background: transparent;
+}
+#alpharegistrationtopheader1 {
+	margin: 0 0 15px 0;
+	background: transparent;
+}
+#alpharegistrationtopleft1 {
+	float: left;
+	width: 50%;
+}
+#alpharegistrationtopright1 { 
+	margin: 0;
+	float: left;
+	width: 50%;
+	height: auto;
+}
+#alpharegistrationtopfooter1 {
+	margin: 0 0 15px 0;
+	background: transparent;
+}
+/* On Bottom of Component*/
+#alpharegistrationfooter1 {
+	text-align: left;
+	margin: 0px auto;
+	padding: 0px;
+	border:0;
+	width: 100%;
+	background: transparent;
+}
+#alpharegistrationtopfooter1 {
+	margin: 0 0 15px 0;
+	background: transparent;
+}
+#alpharegistrationfooter {
+	margin: 0 0 15px 0;
+	background: transparent;
+}
+#alpharegistrationfooterleft1 {
+	float: left;
+	width: 50%;
+}
+#alpharegistrationfooterright1 { 
+	margin: 0;
+	float: left;
+	width: 50%;
+	height: auto;
+}
+#alpharegistrationbottomfooter1 {
+	margin: 0 0 15px 0;
+	background: transparent;
+}
+/* Step2*/
+#alpharegistration2 {
+	text-align: left;
+	margin: 0px auto;
+	padding: 0px;
+	border:0;
+	width: 100%;
+	background: transparent;
+}
+#alpharegistrationtopheader2 {
+	margin: 0 0 15px 0;
+	background: transparent;
+}
+#alpharegistrationtopleft2 {
+	float: left;
+	width: 50%;
+}
+#alpharegistrationtopright2 { 
+	margin: 0;
+	float: left;
+	width: 50%;
+	height: auto;
+}
+#alpharegistrationtopfooter2 {
+	margin: 0 0 15px 0;
+	background: transparent;
+}
+/* On Bottom of Component*/
+#alpharegistrationfooter2 {
+	text-align: left;
+	margin: 0px auto;
+	padding: 0px;
+	border:0;
+	width: 100%;
+	background: transparent;
+}
+#alpharegistrationtopfooter2 {
+	margin: 0 0 15px 0;
+	background: transparent;
+}
+#alpharegistrationfooter2 {
+	margin: 0 0 15px 0;
+	background: transparent;
+}
+#alpharegistrationfooterleft2 {
+	float: left;
+	width: 50%;
+}
+#alpharegistrationfooterright2 { 
+	margin: 0;
+	float: left;
+	width: 50%;
+	height: auto;
+}
+#alpharegistrationbottomfooter2 {
+	margin: 0 0 15px 0;
+	background: transparent;
+}
+/* Step3*/
+#alpharegistration3 {
+	text-align: left;
+	margin: 0px auto;
+	padding: 0px;
+	border:0;
+	width: 100%;
+	background: transparent;
+}
+#alpharegistrationtopheader3 {
+	margin: 0 0 15px 0;
+	background: transparent;
+}
+#alpharegistrationtopleft3 {
+	float: left;
+	width: 50%;
+}
+#alpharegistrationtopright3 { 
+	margin: 0;
+	float: left;
+	width: 50%;
+	height: auto;
+}
+#alpharegistrationtopfooter3 {
+	margin: 0 0 15px 0;
+	background: transparent;
+}
+/* On Bottom of Component*/
+#alpharegistrationfooter3 {
+	text-align: left;
+	margin: 0px auto;
+	padding: 0px;
+	border:0;
+	width: 100%;
+	background: transparent;
+}
+#alpharegistrationtopfooter3 {
+	margin: 0 0 15px 0;
+	background: transparent;
+}
+#alpharegistrationfooter3 {
+	margin: 0 0 15px 0;
+	background: transparent;
+}
+#alpharegistrationfooterleft3 {
+	float: left;
+	width: 50%;
+}
+#alpharegistrationfooterright3 { 
+	margin: 0;
+	float: left;
+	width: 50%;
+	height: auto;
+}
+#alpharegistrationbottomfooter3 {
+	margin: 0 0 15px 0;
+	background: transparent;
+}

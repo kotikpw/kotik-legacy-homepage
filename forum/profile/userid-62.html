@@ -1,0 +1,1372 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl-pl" lang="pl-pl" >
+
+<!-- Mirrored from kotik.iem.pw.edu.pl/forum/profile/userid-62 by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 26 Mar 2013 00:41:50 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <base  />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="KOTIK, KOTiIK, koło naukowe, Open source, GPL, GNU" />
+  <meta name="description" content="KOTIK - Koło Otwartych Technik Informacyjnych i Komputerowych" />
+  <meta name="generator" content="Joomla! 1.5 - Open Source Content Management" />
+  <title>Forum</title>
+  <link href="../../templates/jaskowytemplateforkotik/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="stylesheet" href="../../components/com_kunena/js/mediaboxadvanced/css/mediaboxAdv.css" type="text/css" />
+  <link rel="stylesheet" href="../../components/com_kunena/template/default/css/kunena.forum-min.css" type="text/css" />
+  <link rel="stylesheet" href="../../components/com_kunena/template/default/css/kunena.default-min.css" type="text/css" />
+  <link rel="stylesheet" href="../../media/system/css/calendar-jos.css" type="text/css"  title="green"  media="all" />
+  <link rel="stylesheet" href="../../modules/mod_jaskorotator/style.css" type="text/css" />
+  <style type="text/css">
+    <!--
+	/* Kunena Custom CSS */	#Kunena div.kheader { background: #5388B4 }
+	#Kunena #ktop { border-color: #5388B4 }
+	#Kunena #ktop span.ktoggler { background: #5388B4 }
+	#Kunena #ktab a:hover,
+	#Kunena #ktab li.Kunena-item-active a	{ background-color: #5388B4 }
+	#Kunena #ktab ul.menu li.active a { background-color: #5388B4 }
+	#Kunena a:link,
+	#Kunena a:visited,
+	#Kunena a:active {color: #5388B4;}
+	#Kunena a:focus {outline: none;}
+	#Kunena a:hover {color: #FF0000;}	#Kunena a:link,
+	#Kunena a:visited,
+	#Kunena a:active {color: #5388B4;}
+	#Kunena a:focus {outline: none;}	#Kunena div.kannouncement div.kheader { background: #5388B4 }	#Kunena div#kannouncement .kanndesc { background: #FFFFFF }	#Kunena div.kfrontstats div.kheader { background: #5388B4 }	#Kunena div.kwhoisonline div.kheader { background: #5388B4 }	#Kunena .kicon-profile { background-image: url("../../components/com_kunena/template/default/media/iconsets/profile/default/default.png"); }
+	#Kunena .kicon-button { background-image: url("../../components/com_kunena/template/default/media/iconsets/buttons/default/default.png"); }
+	#Kunena #kbbcode-toolbar li a,#Kunena #kattachments a { background-image:url("../../components/com_kunena/template/default/media/iconsets/editor/default/default.png"); }
+	/* End of Kunena Custom CSS */
+    -->
+  </style>
+  <script type="text/javascript" src="../../plugins/system/mtupgrade/mootools.js"></script>
+  <script type="text/javascript" src="../../components/com_kunena/js/mediaboxadvanced/js/mediaboxAdv.js"></script>
+  <script type="text/javascript" src="../../components/com_kunena/template/default/js/default-min.js"></script>
+  <script type="text/javascript" src="../../media/system/js/calendar.js"></script>
+  <script type="text/javascript" src="../../media/system/js/calendar-setup.js"></script>
+  <script type="text/javascript" src="../../modules/mod_jaskorotator/script.js"></script>
+  <script type="text/javascript">
+// <![CDATA[
+var kunena_toggler_close = "COM_KUNENA_TOGGLER_COLLAPSE";
+var kunena_toggler_open = "COM_KUNENA_TOGGLER_EXPAND";
+// ]]>// <![CDATA[
+window.addEvent('domready', function(){ $$('dl.tabs').each(function(tabs){ new KunenaTabs(tabs); }); });
+// ]]>// Calendar i18n Setup.
+Calendar._FD = 0;
+Calendar._DN = new Array ("niedziela", "poniedziałek", "wtorek", "środa", "czwartek", "piątek", "sobota", "niedziela");
+Calendar._SDN = new Array ("N", "Pn", "Wt", "Śr", "Cz", "Pt", "So", "N");
+Calendar._MN = new Array ("stycznia", "lutego", "marca", "kwietnia", "maja", "czerwca", "lipca", "sierpnia", "września", "października", "listopada", "grudnia");
+Calendar._SMN = new Array ("Sty", "Lut", "Mar", "Kwi", "Maj", "Cze", "Lip", "Sie", "Wrz", "Paź", "Lis", "Gru");
+
+Calendar._TT = {};
+Calendar._TT["INFO"] = "O kalendarzu";
+Calendar._TT["PREV_YEAR"] = "Przyciśnij, by przejść do poprzedniego roku. Przyciśnij i przytrzymaj, by przejść do listy lat.";
+Calendar._TT["PREV_MONTH"] = "Przyciśnij, by przejść do poprzedniego miesiąca. Przyciśnij i przytrzymaj, by przejść do listy miesięcy.";
+Calendar._TT["GO_TODAY"] = "Ustaw obecną datę";
+Calendar._TT["NEXT_MONTH"] = "Przyciśnij, by przejść do następnego miesiąca. Przyciśnij i przytrzymaj, by przejść do listy miesięcy.";
+Calendar._TT["NEXT_YEAR"] = "Przyciśnij, by przejść do następnego roku. Przyciśnij i przytrzymaj, by przejść do listy lat.";
+Calendar._TT["SEL_DATE"] = "Wybierz datę";
+Calendar._TT["DRAG_TO_MOVE"] = "Przyciśnij i przeciągnij, by przesunąć";
+Calendar._TT["PART_TODAY"] = "(Dziś)";
+Calendar._TT["DAY_FIRST"] = "Najpierw %s";
+Calendar._TT["WEEKEND"] = "0,6";
+Calendar._TT["CLOSE"] = "Zamknij";
+Calendar._TT["TODAY"] = "Dzisiaj";
+Calendar._TT["TIME_PART"] = "Shift+ Przyciśnij lub przeciągnij, by zmienić wartość.";
+Calendar._TT["DEF_DATE_FORMAT"] = "%D-%M-%Y";
+Calendar._TT["TT_DATE_FORMAT"] = "%A, %e %B";
+Calendar._TT["WK"] = "wk";
+Calendar._TT["TIME"] = "Czas:";
+
+Calendar._TT["ABOUT"] =
+"DHTML Date/Time Selector\n" +
+"(c) dynarch.com 2002-2005 / Author: Mihai Bazon\n" +
+"For latest version visit: http://www.dynarch.com/projects/calendar/\n" +
+"Distributed under GNU LGPL.  See http://gnu.org/licenses/lgpl.html for details." +
+"\n\n" +
+"Date selection:\n" +
+"- Use the \xab, \xbb buttons to select year\n" +
+"- Use the " + String.fromCharCode(0x2039) + ", " + String.fromCharCode(0x203a) + " buttons to select month\n" +
+"- Hold mouse button on any of the above buttons for faster selection.";
+
+Calendar._TT["ABOUT_TIME"] = "\n\n" +
+"Time selection:\n" +
+"- Click on any of the time parts to increase it\n" +
+"- or Shift-click to decrease it\n" +
+"- or click and drag for faster selection.";
+window.addEvent("domready", function() {
+	var JTooltips = new Tips($$(".hasTip"), { maxTitleChars: 50, fixed: false});
+});
+  </script>
+  <link rel="alternate" type="application/rss+xml" title="Pobierz nagłówki ostatnich postów." href="../rsshtml.html" />
+
+
+<!--[if lt IE 7.]>
+<script defer type="text/javascript" src="/templates/jaskowytemplateforkotik/pngfix.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../../templates/system/css/system.css" type="text/css" />
+<link rel="stylesheet" href="../../templates/jaskowytemplateforkotik/css/template.css" type="text/css" />
+</head>
+
+<body id="body_bg">
+<a name="top"></a>
+<div id="topBar">
+	<ul class="menu"><li class="item19"><a href="../kategorie.html"><span>Forum</span></a></li><li class="item1"><a href="../../index.html"><span>Start</span></a></li><li class="item15"><a href="../../projekty.html"><span>Projekty</span></a></li><li class="item14"><a href="../../spotkania.html"><span>Spotkania</span></a></li><li class="item24"><a href="../../dokumenty.html"><span>Dokumenty</span></a></li><li class="item23"><a href="../../kontakt.html"><span>Kontakt</span></a></li><li class="item37"><a href="../../warsztaty-android.html"><span>Warsztaty Android</span></a></li></ul>
+</div>
+<div id="topPanel">
+	<div id="topPanelWrapperLeft">
+		<div id="topPanelWrapperRight">
+			<div id="topPanelWrapper">
+				<div id="logo">
+					<a href="../../index.html"><img src="../../templates/jaskowytemplateforkotik/images/logokotik3.png" id="logoKotik" alt="KOTIK Logo" /></a>
+				</div>
+				<div id="logoName">
+					
+<script type="text/javascript">
+    maxTabs = 3;
+    startRotating(currentTab,maxTabs);
+</script>
+
+<div id="rotatingLogo">
+    <ul id="rotatingLogoList" onmouseover="stopRotating();" onmouseout="startRotating(currentTab,maxTabs)">
+        <li><a href="../../index.html"><img src="../../modules/mod_jaskorotator/images/logonapis.png" alt="Koło Otwartych Technik Informacyjnych i Komputerowych" /></a></li><li><a href="../../index.php/system-prezentacji-tresci.html"><img src="../../modules/mod_jaskorotator/images/spt_logo.png" alt="System Prezentacji Treści" /></a></li><li><a href="../../index.php/google-killer.html"><img src="../../modules/mod_jaskorotator/images/gk_logo.png" alt="Google Killer" /></a></li>    </ul>
+</div>
+<div id="rotatingButtons">
+    <ul id="rotatingButtonsList">
+        <li><a onclick="openTab(3)">&nbsp;</a></li><li><a onclick="openTab(2)">&nbsp;</a></li><li><a onclick="openTab(1)" id="currentTab">&nbsp;</a></li></div>
+									</div>
+				<div class="clearBoth"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="menuPanel">
+	<div id="menuPanelWrapper">
+		<form action="http://kotik.iem.pw.edu.pl/forum/profile/index.php" method="post">
+	<div class="search">
+		<input name="searchword" id="mod_search_searchword" maxlength="20" alt="Szukaj" class="inputbox" type="text" size="20" value="Szukaj..."  onblur="if(this.value=='') this.value='Szukaj...';" onfocus="if(this.value=='Szukaj...') this.value='';" />	</div>
+	<input type="hidden" name="task"   value="search" />
+	<input type="hidden" name="option" value="com_search" />
+	<input type="hidden" name="Itemid" value="27" />
+</form><span class="breadcrumbs pathway">
+<a href="../../index.html" class="pathway">Start</a> <img src="../../images/M_images/arrow.png" alt=""  /> Forum</span>
+
+		<div class="clearBoth"></div>
+	</div>
+</div>
+
+<div id="menuShadow">
+</div>
+
+<div id="contentPanel">
+	<div id="contentPanelWrapperLeft">
+		<div id="contentPanelWrapperRight">
+			<div id="contentPanelWrapper">
+				<div id="leftBar">
+							<div class="module_menu">
+			<div>
+				<div>
+					<div>
+													<h3>Projekty</h3>
+											<ul class="menu"><li class="item11"><a href="../../system-prezentacji-tresci.html"><span>System Prezentacji Treści</span></a></li><li class="item8"><a href="../../3d.html"><span>3D</span></a></li><li class="item9"><a href="../../fool.html"><span>FOOL</span></a></li><li class="item10"><a href="../../google-killer.html"><span>Google Killer</span></a></li><li class="item12"><a href="../../pomysy.html"><span>Pomysły</span></a></li></ul>					</div>
+				</div>
+			</div>
+		</div>
+			<div class="module_menu">
+			<div>
+				<div>
+					<div>
+													<h3>Spotkania</h3>
+											<ul class="menu"><li class="item2"><a href="../../ogloszenia.html"><span>Ogłoszenia</span></a></li><li class="item7"><a href="../../sprawozdania.html"><span>Sprawozdania</span></a></li></ul>					</div>
+				</div>
+			</div>
+		</div>
+			<div class="module_menu">
+			<div>
+				<div>
+					<div>
+													<h3>Logowanie</h3>
+											<form action="http://kotik.iem.pw.edu.pl/forum" method="post" name="login" id="form-login" >
+		<fieldset class="input">
+	<p id="form-login-username">
+		<label for="modlgn_username">Login</label><br />
+		<input id="modlgn_username" type="text" name="username" class="inputbox" alt="username" size="18" />
+	</p>
+	<p id="form-login-password">
+		<label for="modlgn_passwd">Hasło</label><br />
+		<input id="modlgn_passwd" type="password" name="passwd" class="inputbox" size="18" alt="password" />
+	</p>
+		<p id="form-login-remember">
+		<label for="modlgn_remember">Zapamiętaj</label>
+		<input id="modlgn_remember" type="checkbox" name="remember" class="inputbox" value="yes" alt="Remember Me" />
+	</p>
+		<input type="submit" name="Submit" class="button" value="Zaloguj" />
+	</fieldset>
+	<ul>
+		<li>
+			<a href="../../component/user/reset.html">
+			Nie pamiętasz hasła?</a>
+		</li>
+		<li>
+			<a href="../../component/user/remind.html">
+			Nie pamiętasz nazwy?</a>
+		</li>
+				<li>
+			<a href="../../component/alpharegistration/indexcd33.html">
+				Załóż swoje konto!</a>
+		</li>
+			</ul>
+	
+	<input type="hidden" name="option" value="com_user" />
+	<input type="hidden" name="task" value="login" />
+	<input type="hidden" name="return" value="L2ZvcnVtL3Byb2ZpbGUvdXNlcmlkLTYy" />
+	<input type="hidden" name="9fcc2372f6f7b7e279ae1a53b1d4f19d" value="1" /></form>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+				</div>
+				<div id="content">
+					<div id="contentMessage">
+						
+					</div>
+					<!--[if lte IE 7]>
+<link rel="stylesheet" href="http://kotik.iem.pw.edu.pl/components/com_kunena/template/default/css/kunena.forum.ie7.css" type="text/css" />
+<![endif]-->
+
+<div id="Kunena"> <!-- Kunena Menu -->
+<div id="ktop">
+			<!-- Kunena Module Position: kunena_menu -->
+		<div id="ktopmenu">
+			<div id="ktab">		<div class="moduletable">
+					<ul class="menu"><li class="item28"><a href="../kategorie.html"><span>Kategorie</span></a></li><li class="item29"><a href="../ostatnie.html"><span>Ostatnie tematy</span></a></li><li class="item34"><a href="../regulamin.html"><span>Regulamin</span></a></li><li class="item35"><a href="../pomoc.html"><span>Pomoc</span></a></li><li class="item36"><a href="../szukaj.html"><span>Szukaj</span></a></li></ul>		</div>
+	</div>
+		</div>
+		<!-- /Kunena Module Position: kunena_menu -->
+		<span class="ktoggler fltrt"><a class="ktoggler close" title="COM_KUNENA_TOGGLER_COLLAPSE" rel="kprofilebox"></a></span>
+</div>
+<!-- /Kunena Menu --><div class="kblock kpbox">
+	<div class="kcontainer" id="kprofilebox">
+		<div class="kbody">
+<table class="kprofilebox">
+	<tbody>
+		<tr class="krow1">
+			<td valign="top" class="kprofileboxcnt">
+				<div class="k_guest">
+					Witamy,
+					<b>Gościu</b>
+				</div>
+								<form action="http://kotik.iem.pw.edu.pl/forum/profile/index.php?option=com_kunena" method="post" name="login">
+					<div class="input">
+						<span>
+							Nazwa użytkownika							<input type="text" name="username" class="inputbox ks" alt="username" size="18" />
+						</span>
+						<span>
+							Hasło:							<input type="password" name="passwd" class="inputbox ks" size="18" alt="password" /></span>
+						<span>
+														Zapamiętaj mnie							<input type="checkbox" name="remember" alt="" value="yes" />
+														<input type="submit" name="submit" class="kbutton" value="Zaloguj się" />
+							<input type="hidden" name="option" value="com_user" />
+														<input type="hidden" name="task" value="login" />
+							<input type="hidden" name="return" value="L2ZvcnVtL3Byb2ZpbGUvdXNlcmlkLTYy" />
+							<input type="hidden" name="9fcc2372f6f7b7e279ae1a53b1d4f19d" value="1" />						</span>
+					</div>
+					<div class="klink-block">
+						<span class="kprofilebox-pass">
+							<a href="../../component/user/reset.html" title="" rel="nofollow">Nie pamiętasz hasła?</a>						</span>
+						<span class="kprofilebox-user">
+							<a href="../../component/user/remind.html" title="" rel="nofollow">Zapomniałeś nazwy użytkownika?</a>						</span>
+												<span class="kprofilebox-register">
+							<a href="../../component/alpharegistration/indexcd33.html" title="" rel="nofollow">Załóż konto</a>						</span>
+											</div>
+				</form>
+							</td>
+						</tr>
+	</tbody>
+</table>
+		</div>
+	</div>
+</div>
+<div class="kblock k-profile">
+	<div class="kheader">
+		<h2><span class="k-name"> admin</span>
+		</h2>
+	</div>
+	<div class="kcontainer">
+		<div class="kbody">
+			<table class = "kblocktable" id ="kprofile">
+				<tr>
+					<td class = "kcol-first kcol-left">
+						<div id="kprofile-leftcol">
+														<div class="kavatar-lg"><img class="kavatar" src="../../media/kunena/avatars/resized/size200/nophoto.jpg" alt="" style="max-width: 200px; max-height: 200px" /></div>
+														<div id="kprofile-stats">
+							<ul>
+																<li><span class="kicon-button kbuttononline-no"><span class="online-no"><span>Offline</span></span></span></li>
+																<li><strong>Ranga: </strong>Administrator</li>								<li class="kprofile-rank"><img src="../../components/com_kunena/template/default/images/ranks/rankadmin.gif" alt="" /></li>								<li><strong>Data rejestracji:</strong> <span title="2 lata, 5 mies. temu">10/16/2010</span></li>								<li><strong>Ostatnia wizyta:</strong> <span title="3 mies., 3 tyg. temu">12/04/2012</span></li>								<li><strong>Strefa czasowa:</strong> GMT +1:00</li>
+								<li><strong>Czas lokalny:</strong> 23:19</li>
+								<li><strong>Wiadomości:</strong> 29</li>																								<li><strong>Odsłon profilu:</strong> 329</li>
+								<li></li>
+																							</ul>
+							</div>
+						</div>
+					</td>
+					<td class="kcol-mid kcol-right">
+						<div id="kprofile-rightcol">
+							<div id="kprofile-rightcoltop">
+	<div class="kprofile-rightcol2">
+
+<div class="kiconrow">
+	<span class="kicon-profile kicon-profile-twitter-off"></span>	<span class="kicon-profile kicon-profile-facebook-off"></span>	<span class="kicon-profile kicon-profile-myspace-off"></span>	<span class="kicon-profile kicon-profile-linkedin-off"></span>	<span class="kicon-profile kicon-profile-skype-off"></span></div>
+<div class="kiconrow">
+	<span class="kicon-profile kicon-profile-delicious-off"></span>	<span class="kicon-profile kicon-profile-friendfeed-off"></span>	<span class="kicon-profile kicon-profile-digg-off"></span></div>
+<div class="clr"></div>
+<div class="kiconrow">
+	<span class="kicon-profile kicon-profile-yim-off"></span>	<span class="kicon-profile kicon-profile-aim-off"></span>	<span class="kicon-profile kicon-profile-gtalk-off"></span>	<span class="kicon-profile kicon-profile-icq-off"></span>	<span class="kicon-profile kicon-profile-msn-off"></span></div>
+<div class="kiconrow">
+	<span class="kicon-profile kicon-profile-blogspot-off"></span>	<span class="kicon-profile kicon-profile-flickr-off"></span>	<span class="kicon-profile kicon-profile-bebo-off"></span></div>	</div>
+	<div class="kprofile-rightcol1">
+		<ul>
+			<li><span class="kicon-profile kicon-profile-location"></span><strong>Miejsce:</strong> Nieznany</li>
+			<!--  The gender determines the suffix on the span class- gender-male & gender-female  -->
+			<li><span class="kicon-profile kicon-profile-gender-unknown"></span><strong>Płeć:</strong> Nieznana</li>
+			<li class="bd"><span class="kicon-profile kicon-profile-birthdate"></span><strong>Data urodzenia:</strong> <span title="Nieznana">Nieznana</span>
+			<!--  <a href="#" title=""><span class="bday-remind"></span></a> -->
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="clrline"></div>
+<div id="kprofile-rightcolbot">
+	<div class="kprofile-rightcol2">
+		<ul>
+									<li><a href="http://" target="_blank"></a></li>
+		</ul>
+	</div>
+	<div class="kprofile-rightcol1">
+		<h4>Podpis</h4>
+		<div class="kmsgsignature"><div></div></div>
+	</div>
+
+</div>
+
+<div class="clrline"></div>
+
+<div id="kprofile-tabs">
+	<dl class="tabs">
+				<dt class="open" title="Posty">Posty</dt>
+		<dd style="display: none;">
+			<form action="http://kotik.iem.pw.edu.pl/forum/profile/index.php" method="post" name="kBulkActionForm">
+<div class="kblock">
+	<div class="kheader">
+		<h2><span>Posty</span></h2>
+	</div>
+	<div class="kcontainer">
+		<div class="kbody">
+<table
+	class="">
+				<tr class="krow2">
+			<td class="kcol-first kcol-ktopicicon">
+				<img src="../../components/com_kunena/template/default/images/icons/topic-default.gif" alt="emo" />			</td>
+
+			<td class="kcol-mid ktopictittle">
+							<div class="ktopic-title-cover">
+					<a class="ktopic-title km" href="../spotkania-i-organizacja/31-przenosiny-na-forum.html" title="Witam.
+
+Zgodnie z zapowiedziami powinniśmy rozpocząć aktywność na forum, zamiast przy pomocy listy mailingowej. Powinno to wprowadzić dodatkowy porządek i umożliwić wgląd w historię konwersacji. Forum zostało zmienione na Kunena z FireBoard - to drugie sporo ostatnio szwankowało.
+
+Postaram się sprawdzić możliwości przeniesienia dyskusji z wikidot tutaj. Póki co proponuję jedynie w ramach odczytu używać starego forum (http://kotik.wikidot.com/forum:start).
+
+Dzięki RSS nie trzeba się będzie martwić o codzienne sprawdzanie, czy pojawiło się coś nowego.
+
+I to by było na tyle,
+pozdrawiam,
+Jan Bartnik" rel="follow">Przenosiny na forum</a>				</div>
+				<div style="display:none">Witam.<br />
+<br />
+Zgodnie z zapowiedziami powinniśmy rozpocząć aktywność na forum, zamiast przy pomocy listy mailingowej. Powinno to wprowadzić dodatkowy porządek i umożliwić wgląd w historię konwersacji. Forum zostało zmienione na Kunena z FireBoard - to drugie sporo ostatnio szwankowało.<br />
+<br />
+Postaram się sprawdzić możliwości przeniesienia dyskusji z wikidot tutaj. Póki co proponuję jedynie w ramach odczytu używać <a href="http://kotik.wikidot.com/forum:start" rel="nofollow" target="_blank">starego forum</a>.<br />
+<br />
+Dzięki RSS nie trzeba się będzie martwić o codzienne sprawdzanie, czy pojawiło się coś nowego.<br />
+<br />
+I to by było na tyle,<br />
+pozdrawiam,<br />
+Jan Bartnik</div>
+			</td>
+
+			<td class="kcol-mid ktopictittle">
+				<a class="ktopic-title km" href="../spotkania-i-organizacja/31-przenosiny-na-forum.html" title="Witam.
+
+Zgodnie z zapowiedziami powinniśmy rozpocząć aktywność na forum, zamiast przy pomocy listy mailingowej. Powinno to wprowadzić dodatkowy porządek i umożliwić wgląd w historię konwersacji. Forum zostało zmienione na Kunena z FireBoard - to drugie sporo ostatnio szwankowało.
+
+Postaram się sprawdzić możliwości przeniesienia dyskusji z wikidot tutaj. Póki co proponuję jedynie w ramach odczytu używać starego forum (http://kotik.wikidot.com/forum:start).
+
+Dzięki RSS nie trzeba się będzie martwić o codzienne sprawdzanie, czy pojawiło się coś nowego.
+
+I to by było na tyle,
+pozdrawiam,
+Jan Bartnik" rel="follow">Przenosiny na forum</a>												<div class="ks">
+					<!-- Category -->
+					<span class="ktopic-category">
+						Kategoria: <a href="../spotkania-i-organizacja.html" title="" rel="follow">Spotkania i organizacja</a>					</span>
+					<!-- /Category -->
+				</div>
+			</td>
+			<td class="kcol-mid kcol-ktopiclastpost">
+				<div class="klatest-post-info">
+					<!--  Sticky   -->
+										<!--  /Sticky   -->
+					<!-- Avatar -->
+										<!-- /Avatar -->
+					<!-- By -->
+					<span class="ktopic-posted-time" title="01/13/2011 15:37">
+						Nadesłany 2 lata, 2 mies. temu&nbsp;
+					</span>
+
+										<br />
+					<span class="ktopic-by">przez <a class="kwho-admin" href="userid-62.html" title="" rel="nofollow">admin</a></span>
+										<!-- /By -->
+				</div>
+			</td>
+		</tr>
+
+				<tr class="krow1">
+			<td class="kcol-first kcol-ktopicicon">
+				<img src="../../components/com_kunena/template/default/images/icons/topic-default.gif" alt="emo" />			</td>
+
+			<td class="kcol-mid ktopictittle">
+							<div class="ktopic-title-cover">
+					<a class="ktopic-title km" href="../system-prezentacji-treci/30-no-i-co-z-tym-projektem.html" title="Ja bym chętnie coś zrobił, ale dyskusja nam w ogóle nie wychodzi.
+Może po prostu zaczniemy robić cokolwiek, bez planowania i po drodze zobaczymy nad czym trzeba się zastanowić, co zmienić.
+
+Proponuję zacząć od serwera treści, ja mogę od ręki pisać w Javie." rel="follow">No i co z tym projektem?</a>				</div>
+				<div style="display:none">Ja bym chętnie coś zrobił, ale dyskusja nam w ogóle nie wychodzi.<br />
+Może po prostu zaczniemy robić cokolwiek, bez planowania i po drodze zobaczymy nad czym trzeba się zastanowić, co zmienić.<br />
+<br />
+Proponuję zacząć od serwera treści, ja mogę od ręki pisać w Javie.</div>
+			</td>
+
+			<td class="kcol-mid ktopictittle">
+				<a class="ktopic-title km" href="../system-prezentacji-treci/30-no-i-co-z-tym-projektem.html" title="Ja bym chętnie coś zrobił, ale dyskusja nam w ogóle nie wychodzi.
+Może po prostu zaczniemy robić cokolwiek, bez planowania i po drodze zobaczymy nad czym trzeba się zastanowić, co zmienić.
+
+Proponuję zacząć od serwera treści, ja mogę od ręki pisać w Javie." rel="follow">No i co z tym projek ...</a>												<div class="ks">
+					<!-- Category -->
+					<span class="ktopic-category">
+						Kategoria: <a href="../system-prezentacji-treci.html" title="" rel="follow">System prezentacji treści</a>					</span>
+					<!-- /Category -->
+				</div>
+			</td>
+			<td class="kcol-mid kcol-ktopiclastpost">
+				<div class="klatest-post-info">
+					<!--  Sticky   -->
+										<!--  /Sticky   -->
+					<!-- Avatar -->
+										<!-- /Avatar -->
+					<!-- By -->
+					<span class="ktopic-posted-time" title="01/13/2011 15:36">
+						Nadesłany 2 lata, 2 mies. temu&nbsp;
+					</span>
+
+										<br />
+					<span class="ktopic-by">przez <a class="kwho-admin" href="userid-62.html" title="" rel="nofollow">admin</a></span>
+										<!-- /By -->
+				</div>
+			</td>
+		</tr>
+
+				<tr class="krow2">
+			<td class="kcol-first kcol-ktopicicon">
+				<img src="../../components/com_kunena/template/default/images/icons/topic-default.gif" alt="emo" />			</td>
+
+			<td class="kcol-mid ktopictittle">
+							<div class="ktopic-title-cover">
+					<a class="ktopic-title km" href="../system-prezentacji-treci/29-implementacja-framebuffer.html" title="Jest jeszcze trzecie rozwiązanie (X + WM, X - WM) - framebuffer. Problemem może być tutaj uzyskanie akceleracji sprzętowej… Ale z drugiej strony może wystarczy `mplayer -vo=fb`?" rel="follow">Implementacja: Framebuffer</a>				</div>
+				<div style="display:none">Jest jeszcze trzecie rozwiązanie (X + WM, X - WM) - framebuffer. Problemem może być tutaj uzyskanie akceleracji sprzętowej… Ale z drugiej strony może wystarczy `mplayer -vo=fb`?</div>
+			</td>
+
+			<td class="kcol-mid ktopictittle">
+				<a class="ktopic-title km" href="../system-prezentacji-treci/29-implementacja-framebuffer.html" title="Jest jeszcze trzecie rozwiązanie (X + WM, X - WM) - framebuffer. Problemem może być tutaj uzyskanie akceleracji sprzętowej… Ale z drugiej strony może wystarczy `mplayer -vo=fb`?" rel="follow">Implementacja: Frame ...</a>												<div class="ks">
+					<!-- Category -->
+					<span class="ktopic-category">
+						Kategoria: <a href="../system-prezentacji-treci.html" title="" rel="follow">System prezentacji treści</a>					</span>
+					<!-- /Category -->
+				</div>
+			</td>
+			<td class="kcol-mid kcol-ktopiclastpost">
+				<div class="klatest-post-info">
+					<!--  Sticky   -->
+										<!--  /Sticky   -->
+					<!-- Avatar -->
+										<!-- /Avatar -->
+					<!-- By -->
+					<span class="ktopic-posted-time" title="01/13/2011 15:35">
+						Nadesłany 2 lata, 2 mies. temu&nbsp;
+					</span>
+
+										<br />
+					<span class="ktopic-by">przez <a class="kwho-admin" href="userid-62.html" title="" rel="nofollow">admin</a></span>
+										<!-- /By -->
+				</div>
+			</td>
+		</tr>
+
+				<tr class="krow1">
+			<td class="kcol-first kcol-ktopicicon">
+				<img src="../../components/com_kunena/template/default/images/icons/topic-default.gif" alt="emo" />			</td>
+
+			<td class="kcol-mid ktopictittle">
+							<div class="ktopic-title-cover">
+					<a class="ktopic-title km" href="../system-prezentacji-treci/28-implementacja-wm-less-x.html" title="Przypominam, że na spotkaniu przetestowaliśmy też uruchamianie aplikacji bezpośrednio w X-ie bez żadnego WM.
+
+Jak powiedział Łukasz Stelmach - WM potrzebny nam do przemieszczania okien, tymczasem nie będzie u nas żadnego wejścia. Ustawienia okna i przemieszczenie ich można załatwić od strony programowej." rel="follow">Implementacja: WM-less X</a>				</div>
+				<div style="display:none">Przypominam, że na spotkaniu przetestowaliśmy też uruchamianie aplikacji bezpośrednio w X-ie bez żadnego WM.<br />
+<br />
+Jak powiedział Łukasz Stelmach - WM potrzebny nam do przemieszczania okien, tymczasem nie będzie u nas żadnego wejścia. Ustawienia okna i przemieszczenie ich można załatwić od strony programowej.</div>
+			</td>
+
+			<td class="kcol-mid ktopictittle">
+				<a class="ktopic-title km" href="../system-prezentacji-treci/28-implementacja-wm-less-x.html" title="Przypominam, że na spotkaniu przetestowaliśmy też uruchamianie aplikacji bezpośrednio w X-ie bez żadnego WM.
+
+Jak powiedział Łukasz Stelmach - WM potrzebny nam do przemieszczania okien, tymczasem nie będzie u nas żadnego wejścia. Ustawienia okna i przemieszczenie ich można załatwić od strony programowej." rel="follow">Implementacja: WM-le ...</a>												<div class="ks">
+					<!-- Category -->
+					<span class="ktopic-category">
+						Kategoria: <a href="../system-prezentacji-treci.html" title="" rel="follow">System prezentacji treści</a>					</span>
+					<!-- /Category -->
+				</div>
+			</td>
+			<td class="kcol-mid kcol-ktopiclastpost">
+				<div class="klatest-post-info">
+					<!--  Sticky   -->
+										<!--  /Sticky   -->
+					<!-- Avatar -->
+										<!-- /Avatar -->
+					<!-- By -->
+					<span class="ktopic-posted-time" title="01/13/2011 15:34">
+						Nadesłany 2 lata, 2 mies. temu&nbsp;
+					</span>
+
+										<br />
+					<span class="ktopic-by">przez <a class="kwho-admin" href="userid-62.html" title="" rel="nofollow">admin</a></span>
+										<!-- /By -->
+				</div>
+			</td>
+		</tr>
+
+				<tr class="krow2">
+			<td class="kcol-first kcol-ktopicicon">
+				<img src="../../components/com_kunena/template/default/images/icons/topic-default.gif" alt="emo" />			</td>
+
+			<td class="kcol-mid ktopictittle">
+							<div class="ktopic-title-cover">
+					<a class="ktopic-title km" href="../system-prezentacji-treci/25-sprzt-ogolna-dyskusja%2327.html" title="DaVinci - http://focus.ti.com/docs/prod/folders/print/tms320dm368.html" rel="follow">Odp: Sprzęt: Ogólna dyskusja</a>				</div>
+				<div style="display:none">DaVinci - <a href="http://focus.ti.com/docs/prod/folders/print/tms320dm368.html" target="_blank" rel="nofollow">focus.ti.com/docs/prod/folders/print/tms320dm368.html</a></div>
+			</td>
+
+			<td class="kcol-mid ktopictittle">
+				<a class="ktopic-title km" href="../system-prezentacji-treci/25-sprzt-ogolna-dyskusja.html" title="Uważam, że świetnie pasowałaby do tego projektu płytka oparta o chip OMAP 3530 od Texas Instruments.
+Jest to chip z procesorem ARM. Posiada wyjście HDMI (i podobno radzi sobie z full HD), USB host, Ethernet i masę innych bajerów. Oczywiście ma pełen support ze strony linuksa.
+
+Bardzo dużą popularnością cieszy się BeagleBoard (http://beagleboard.org/), kosztuje zaledwie $150, oczywiście w Europie trochę trudniej go zdobyć.
+Do tego za samą ciekawą propozycję projektu można wygrać jedną sztukę (tak jest napisane na ich wiki, chociaż od jakiegoś czasu nie odświeżają listy zwycięzców :/).
+
+Jest jeszcze http://www.armkits.com/Product/devkit8000.asp kosztujący w Polsce 720zł oraz http://shop.igep.es/index.php?main_page=product_info&amp;cPath=1&amp;products_id=38&amp;zenid=jfvugk61oi174j1g1j6ptanbh5 za 130EUR z Hiszpanii." rel="follow">Sprzęt: Ogólna dysku ...</a>												<div class="ks">
+					<!-- Category -->
+					<span class="ktopic-category">
+						Kategoria: <a href="../system-prezentacji-treci.html" title="" rel="follow">System prezentacji treści</a>					</span>
+					<!-- /Category -->
+				</div>
+			</td>
+			<td class="kcol-mid kcol-ktopiclastpost">
+				<div class="klatest-post-info">
+					<!--  Sticky   -->
+										<!--  /Sticky   -->
+					<!-- Avatar -->
+										<!-- /Avatar -->
+					<!-- By -->
+					<span class="ktopic-posted-time" title="01/13/2011 15:34">
+						Nadesłany 2 lata, 2 mies. temu&nbsp;
+					</span>
+
+										<br />
+					<span class="ktopic-by">przez <a class="kwho-admin" href="userid-62.html" title="" rel="nofollow">admin</a></span>
+										<!-- /By -->
+				</div>
+			</td>
+		</tr>
+
+				<tr class="krow1">
+			<td class="kcol-first kcol-ktopicicon">
+				<img src="../../components/com_kunena/template/default/images/icons/topic-default.gif" alt="emo" />			</td>
+
+			<td class="kcol-mid ktopictittle">
+							<div class="ktopic-title-cover">
+					<a class="ktopic-title km" href="../system-prezentacji-treci/25-sprzt-ogolna-dyskusja%2326.html" title="BeagleBoard jest ciekawą propozycją. Tylko do tego trzeba by dokupić coś do sieci pod USB.
+Jest jeszcze coś jak Sheeva plug za 100 dolców, ale nie posiada interfejsów wideo.
+Dobrą krzyżówką jest devkit8000 bo ma ethernet i jest na omapie, ale z ceną to przesadzili.
+
+Ja bym proponował BeagelBorad + kartę wifi na USB za 30 zł z allegro." rel="follow">Odp: Sprzęt: Ogólna dyskusja</a>				</div>
+				<div style="display:none">BeagleBoard jest ciekawą propozycją. Tylko do tego trzeba by dokupić coś do sieci pod USB.<br />
+Jest jeszcze coś jak Sheeva plug za 100 dolców, ale nie posiada interfejsów wideo.<br />
+Dobrą krzyżówką jest devkit8000 bo ma ethernet i jest na omapie, ale z ceną to przesadzili.<br />
+<br />
+Ja bym proponował BeagelBorad + kartę wifi na USB za 30 zł z allegro.</div>
+			</td>
+
+			<td class="kcol-mid ktopictittle">
+				<a class="ktopic-title km" href="../system-prezentacji-treci/25-sprzt-ogolna-dyskusja.html" title="Uważam, że świetnie pasowałaby do tego projektu płytka oparta o chip OMAP 3530 od Texas Instruments.
+Jest to chip z procesorem ARM. Posiada wyjście HDMI (i podobno radzi sobie z full HD), USB host, Ethernet i masę innych bajerów. Oczywiście ma pełen support ze strony linuksa.
+
+Bardzo dużą popularnością cieszy się BeagleBoard (http://beagleboard.org/), kosztuje zaledwie $150, oczywiście w Europie trochę trudniej go zdobyć.
+Do tego za samą ciekawą propozycję projektu można wygrać jedną sztukę (tak jest napisane na ich wiki, chociaż od jakiegoś czasu nie odświeżają listy zwycięzców :/).
+
+Jest jeszcze http://www.armkits.com/Product/devkit8000.asp kosztujący w Polsce 720zł oraz http://shop.igep.es/index.php?main_page=product_info&amp;cPath=1&amp;products_id=38&amp;zenid=jfvugk61oi174j1g1j6ptanbh5 za 130EUR z Hiszpanii." rel="follow">Sprzęt: Ogólna dysku ...</a>												<div class="ks">
+					<!-- Category -->
+					<span class="ktopic-category">
+						Kategoria: <a href="../system-prezentacji-treci.html" title="" rel="follow">System prezentacji treści</a>					</span>
+					<!-- /Category -->
+				</div>
+			</td>
+			<td class="kcol-mid kcol-ktopiclastpost">
+				<div class="klatest-post-info">
+					<!--  Sticky   -->
+										<!--  /Sticky   -->
+					<!-- Avatar -->
+										<!-- /Avatar -->
+					<!-- By -->
+					<span class="ktopic-posted-time" title="01/13/2011 15:34">
+						Nadesłany 2 lata, 2 mies. temu&nbsp;
+					</span>
+
+										<br />
+					<span class="ktopic-by">przez <a class="kwho-admin" href="userid-62.html" title="" rel="nofollow">admin</a></span>
+										<!-- /By -->
+				</div>
+			</td>
+		</tr>
+
+				<tr class="krow2">
+			<td class="kcol-first kcol-ktopicicon">
+				<img src="../../components/com_kunena/template/default/images/icons/topic-default.gif" alt="emo" />			</td>
+
+			<td class="kcol-mid ktopictittle">
+							<div class="ktopic-title-cover">
+					<a class="ktopic-title km" href="../system-prezentacji-treci/25-sprzt-ogolna-dyskusja.html" title="Uważam, że świetnie pasowałaby do tego projektu płytka oparta o chip OMAP 3530 od Texas Instruments.
+Jest to chip z procesorem ARM. Posiada wyjście HDMI (i podobno radzi sobie z full HD), USB host, Ethernet i masę innych bajerów. Oczywiście ma pełen support ze strony linuksa.
+
+Bardzo dużą popularnością cieszy się BeagleBoard (http://beagleboard.org/), kosztuje zaledwie $150, oczywiście w Europie trochę trudniej go zdobyć.
+Do tego za samą ciekawą propozycję projektu można wygrać jedną sztukę (tak jest napisane na ich wiki, chociaż od jakiegoś czasu nie odświeżają listy zwycięzców :/).
+
+Jest jeszcze http://www.armkits.com/Product/devkit8000.asp kosztujący w Polsce 720zł oraz http://shop.igep.es/index.php?main_page=product_info&amp;cPath=1&amp;products_id=38&amp;zenid=jfvugk61oi174j1g1j6ptanbh5 za 130EUR z Hiszpanii." rel="follow">Sprzęt: Ogólna dyskusja</a>				</div>
+				<div style="display:none">Uważam, że świetnie pasowałaby do tego projektu płytka oparta o chip OMAP 3530 od Texas Instruments.<br />
+Jest to chip z procesorem ARM. Posiada wyjście HDMI (i podobno radzi sobie z full HD), USB host, Ethernet i masę innych bajerów. Oczywiście ma pełen support ze strony linuksa.<br />
+<br />
+Bardzo dużą popularnością cieszy się BeagleBoard (<a href="http://beagleboard.org/" target="_blank" rel="nofollow">beagleboard.org/</a>), kosztuje zaledwie $150, oczywiście w Europie trochę trudniej go zdobyć.<br />
+Do tego za samą ciekawą propozycję projektu można wygrać jedną sztukę (tak jest napisane na ich wiki, chociaż od jakiegoś czasu nie odświeżają listy zwycięzców :/).<br />
+<br />
+Jest jeszcze <a href="http://www.armkits.com/Product/devkit8000.asp" target="_blank" rel="nofollow">www.armkits.com/Product/devkit8000.asp</a> kosztujący w Polsce 720zł oraz <a href="http://shop.igep.es/index.php?main_page=product_info&amp;cPath=1&amp;products_id=38&amp;zenid=jfvugk61oi174j1g1j6ptanbh5"  target="_blank" rel="nofollow">shop.igep.es/index.php?main_page=product...61oi174j1g1j6ptanbh5</a> za 130EUR z Hiszpanii.</div>
+			</td>
+
+			<td class="kcol-mid ktopictittle">
+				<a class="ktopic-title km" href="../system-prezentacji-treci/25-sprzt-ogolna-dyskusja.html" title="Uważam, że świetnie pasowałaby do tego projektu płytka oparta o chip OMAP 3530 od Texas Instruments.
+Jest to chip z procesorem ARM. Posiada wyjście HDMI (i podobno radzi sobie z full HD), USB host, Ethernet i masę innych bajerów. Oczywiście ma pełen support ze strony linuksa.
+
+Bardzo dużą popularnością cieszy się BeagleBoard (http://beagleboard.org/), kosztuje zaledwie $150, oczywiście w Europie trochę trudniej go zdobyć.
+Do tego za samą ciekawą propozycję projektu można wygrać jedną sztukę (tak jest napisane na ich wiki, chociaż od jakiegoś czasu nie odświeżają listy zwycięzców :/).
+
+Jest jeszcze http://www.armkits.com/Product/devkit8000.asp kosztujący w Polsce 720zł oraz http://shop.igep.es/index.php?main_page=product_info&amp;cPath=1&amp;products_id=38&amp;zenid=jfvugk61oi174j1g1j6ptanbh5 za 130EUR z Hiszpanii." rel="follow">Sprzęt: Ogólna dysku ...</a>												<div class="ks">
+					<!-- Category -->
+					<span class="ktopic-category">
+						Kategoria: <a href="../system-prezentacji-treci.html" title="" rel="follow">System prezentacji treści</a>					</span>
+					<!-- /Category -->
+				</div>
+			</td>
+			<td class="kcol-mid kcol-ktopiclastpost">
+				<div class="klatest-post-info">
+					<!--  Sticky   -->
+										<!--  /Sticky   -->
+					<!-- Avatar -->
+										<!-- /Avatar -->
+					<!-- By -->
+					<span class="ktopic-posted-time" title="01/13/2011 15:33">
+						Nadesłany 2 lata, 2 mies. temu&nbsp;
+					</span>
+
+										<br />
+					<span class="ktopic-by">przez <a class="kwho-admin" href="userid-62.html" title="" rel="nofollow">admin</a></span>
+										<!-- /By -->
+				</div>
+			</td>
+		</tr>
+
+				<tr class="krow1">
+			<td class="kcol-first kcol-ktopicicon">
+				<img src="../../components/com_kunena/template/default/images/icons/topic-default.gif" alt="emo" />			</td>
+
+			<td class="kcol-mid ktopictittle">
+							<div class="ktopic-title-cover">
+					<a class="ktopic-title km" href="../system-prezentacji-treci/19-implementacja-window-manager%2324.html" title="Ja pracuję na Gentoo więc mogę postawić ;)" rel="follow">Odp: Implementacja: Window Man ...</a>				</div>
+				<div style="display:none">Ja pracuję na Gentoo więc mogę postawić <img src="../../components/com_kunena/template/default/images/emoticons/wink.png" alt="" style="vertical-align: middle;border:0px;" /></div>
+			</td>
+
+			<td class="kcol-mid ktopictittle">
+				<a class="ktopic-title km" href="../system-prezentacji-treci/19-implementacja-window-manager.html" title="Na dzisiejszym spotkaniu podryfowaliśmy w stronę HTML5 i silników graficznych, ale ja zrobiłem prosty mockup systemu w oparciu o minimalistyczny window manager fluxbox.
+
+http://img707.imageshack.us/img707/2020/screenshotpn.jpg
+
+To co widać na obrazku to stan bezpośrednio po odpaleniu X serwera - fluxbox pozwala definiować dla konkretnych okien ustawienia rozmiarów, pozycji, dekoracji itd.
+Błękitny pasek na dole to po prostu gnome-terminal, jest też mplayer odtwarzający film oraz links (nie miałem pod ręką innej przeglądarki bez paska menu :P).
+
+Dzięki takiemu podejściu można wykorzystać istniejące już programy do wyświetlania różnych rzeczy, kosztem bajerów graficznych." rel="follow">Implementacja: Windo ...</a>												<div class="ks">
+					<!-- Category -->
+					<span class="ktopic-category">
+						Kategoria: <a href="../system-prezentacji-treci.html" title="" rel="follow">System prezentacji treści</a>					</span>
+					<!-- /Category -->
+				</div>
+			</td>
+			<td class="kcol-mid kcol-ktopiclastpost">
+				<div class="klatest-post-info">
+					<!--  Sticky   -->
+										<!--  /Sticky   -->
+					<!-- Avatar -->
+										<!-- /Avatar -->
+					<!-- By -->
+					<span class="ktopic-posted-time" title="01/13/2011 15:32">
+						Nadesłany 2 lata, 2 mies. temu&nbsp;
+					</span>
+
+										<br />
+					<span class="ktopic-by">przez <a class="kwho-admin" href="userid-62.html" title="" rel="nofollow">admin</a></span>
+										<!-- /By -->
+				</div>
+			</td>
+		</tr>
+
+				<tr class="krow2">
+			<td class="kcol-first kcol-ktopicicon">
+				<img src="../../components/com_kunena/template/default/images/icons/topic-default.gif" alt="emo" />			</td>
+
+			<td class="kcol-mid ktopictittle">
+							<div class="ktopic-title-cover">
+					<a class="ktopic-title km" href="../system-prezentacji-treci/19-implementacja-window-manager%2323.html" title="Tobiaszu: http://fluxbox-wiki.org/index.php/Build_fluxbox_from_source
+
+Co do kiosk, zjarzę do tego jakoś w tym tygodniu.
+
+Platforma, na jakiej dystrybucji będziemy to uruchamiali ?
+Coś prostego proponuje. Debian ?
+Bo nikomu się nie będzie chciało konfigurować archa czy gentoo.
+Pytam bo chce postawić vm i nastawiać ją na SPT, a nie grzebać w swoim systemie." rel="follow">Odp: Implementacja: Window Man ...</a>				</div>
+				<div style="display:none">Tobiaszu: <a href="http://fluxbox-wiki.org/index.php/Build_fluxbox_from_source" target="_blank" rel="nofollow">fluxbox-wiki.org/index.php/Build_fluxbox_from_source</a><br />
+<br />
+Co do kiosk, zjarzę do tego jakoś w tym tygodniu.<br />
+<br />
+Platforma, na jakiej dystrybucji będziemy to uruchamiali ?<br />
+Coś prostego proponuje. Debian ?<br />
+Bo nikomu się nie będzie chciało konfigurować archa czy gentoo.<br />
+Pytam bo chce postawić vm i nastawiać ją na SPT, a nie grzebać w swoim systemie.</div>
+			</td>
+
+			<td class="kcol-mid ktopictittle">
+				<a class="ktopic-title km" href="../system-prezentacji-treci/19-implementacja-window-manager.html" title="Na dzisiejszym spotkaniu podryfowaliśmy w stronę HTML5 i silników graficznych, ale ja zrobiłem prosty mockup systemu w oparciu o minimalistyczny window manager fluxbox.
+
+http://img707.imageshack.us/img707/2020/screenshotpn.jpg
+
+To co widać na obrazku to stan bezpośrednio po odpaleniu X serwera - fluxbox pozwala definiować dla konkretnych okien ustawienia rozmiarów, pozycji, dekoracji itd.
+Błękitny pasek na dole to po prostu gnome-terminal, jest też mplayer odtwarzający film oraz links (nie miałem pod ręką innej przeglądarki bez paska menu :P).
+
+Dzięki takiemu podejściu można wykorzystać istniejące już programy do wyświetlania różnych rzeczy, kosztem bajerów graficznych." rel="follow">Implementacja: Windo ...</a>												<div class="ks">
+					<!-- Category -->
+					<span class="ktopic-category">
+						Kategoria: <a href="../system-prezentacji-treci.html" title="" rel="follow">System prezentacji treści</a>					</span>
+					<!-- /Category -->
+				</div>
+			</td>
+			<td class="kcol-mid kcol-ktopiclastpost">
+				<div class="klatest-post-info">
+					<!--  Sticky   -->
+										<!--  /Sticky   -->
+					<!-- Avatar -->
+										<!-- /Avatar -->
+					<!-- By -->
+					<span class="ktopic-posted-time" title="01/13/2011 15:32">
+						Nadesłany 2 lata, 2 mies. temu&nbsp;
+					</span>
+
+										<br />
+					<span class="ktopic-by">przez <a class="kwho-admin" href="userid-62.html" title="" rel="nofollow">admin</a></span>
+										<!-- /By -->
+				</div>
+			</td>
+		</tr>
+
+				<tr class="krow1">
+			<td class="kcol-first kcol-ktopicicon">
+				<img src="../../components/com_kunena/template/default/images/icons/topic-default.gif" alt="emo" />			</td>
+
+			<td class="kcol-mid ktopictittle">
+							<div class="ktopic-title-cover">
+					<a class="ktopic-title km" href="../system-prezentacji-treci/19-implementacja-window-manager%2322.html" title="Hmmm, może warto wykorzystać fluxboxa do stworzenia prototypu? Skoro jest prosty i szybko się w nim tworzy. Pytanie jak zaawansowane graficznie treści chcemy wyświetlać: te latające kółka i inne gadżety, o których była mowa.
+
+Andrju, mam problem z konfiguracją fluxboxa, przy próbie dostaję komunikat:
+
+[code]checking for X... no
+configure: error: Fluxbox requires the X Window System libraries and headers.[/code]
+
+Szukałem paczek Synapticem, ale nie wiem, którą należy zainstalować." rel="follow">Odp: Implementacja: Window Man ...</a>				</div>
+				<div style="display:none">Hmmm, może warto wykorzystać fluxboxa do stworzenia prototypu? Skoro jest prosty i szybko się w nim tworzy. Pytanie jak zaawansowane graficznie treści chcemy wyświetlać: te latające kółka i inne gadżety, o których była mowa.<br />
+<br />
+Andrju, mam problem z konfiguracją fluxboxa, przy próbie dostaję komunikat:<br />
+<br />
+<div class="highlight"><pre class="php">checking for X... no
+configure: error: Fluxbox requires the X Window System libraries and headers.</pre></div><br />
+<br />
+Szukałem paczek Synapticem, ale nie wiem, którą należy zainstalować.</div>
+			</td>
+
+			<td class="kcol-mid ktopictittle">
+				<a class="ktopic-title km" href="../system-prezentacji-treci/19-implementacja-window-manager.html" title="Na dzisiejszym spotkaniu podryfowaliśmy w stronę HTML5 i silników graficznych, ale ja zrobiłem prosty mockup systemu w oparciu o minimalistyczny window manager fluxbox.
+
+http://img707.imageshack.us/img707/2020/screenshotpn.jpg
+
+To co widać na obrazku to stan bezpośrednio po odpaleniu X serwera - fluxbox pozwala definiować dla konkretnych okien ustawienia rozmiarów, pozycji, dekoracji itd.
+Błękitny pasek na dole to po prostu gnome-terminal, jest też mplayer odtwarzający film oraz links (nie miałem pod ręką innej przeglądarki bez paska menu :P).
+
+Dzięki takiemu podejściu można wykorzystać istniejące już programy do wyświetlania różnych rzeczy, kosztem bajerów graficznych." rel="follow">Implementacja: Windo ...</a>												<div class="ks">
+					<!-- Category -->
+					<span class="ktopic-category">
+						Kategoria: <a href="../system-prezentacji-treci.html" title="" rel="follow">System prezentacji treści</a>					</span>
+					<!-- /Category -->
+				</div>
+			</td>
+			<td class="kcol-mid kcol-ktopiclastpost">
+				<div class="klatest-post-info">
+					<!--  Sticky   -->
+										<!--  /Sticky   -->
+					<!-- Avatar -->
+										<!-- /Avatar -->
+					<!-- By -->
+					<span class="ktopic-posted-time" title="01/13/2011 15:32">
+						Nadesłany 2 lata, 2 mies. temu&nbsp;
+					</span>
+
+										<br />
+					<span class="ktopic-by">przez <a class="kwho-admin" href="userid-62.html" title="" rel="nofollow">admin</a></span>
+										<!-- /By -->
+				</div>
+			</td>
+		</tr>
+
+				<tr class="krow2">
+			<td class="kcol-first kcol-ktopicicon">
+				<img src="../../components/com_kunena/template/default/images/icons/topic-default.gif" alt="emo" />			</td>
+
+			<td class="kcol-mid ktopictittle">
+							<div class="ktopic-title-cover">
+					<a class="ktopic-title km" href="../system-prezentacji-treci/19-implementacja-window-manager%2321.html" title="Przykładowe możliwości html5 można obejrzeć na stronie:
+http://html5demos.com
+Zaimponowało mi szczególnie http://html5demos.com/geo, znaleźli mnie z dokładnością 10m!
+
+Na spotkaniu jakoś przeszliśmy trochę obok projektu GNU Kiosk. Myślę, że warto by było się z nim zapoznać bliżej. Nawet jeśli nie będzie nadawał się do naszego wykorzystania, to z pewnością rozwiązali wiele podobnych problemów, o których my jeszcze możemy nie mieć pojęcia.
+
+Gdyby Kiosk się nadał, to wystarczyłoby napisać aplikacje w Javascripcie / XULu, która zarządzałaby wyświetlaniem treści. No i oczywiście dwa pozostałe elementy, czyli serwer treści i lokalny demon treści. W tej chwili wydaje mi się, że to najkrótsza droga do celu.
+
+pozdr." rel="follow">Odp: Implementacja: Window Man ...</a>				</div>
+				<div style="display:none">Przykładowe możliwości html5 można obejrzeć na stronie:<br />
+<a href="http://html5demos.com/" target="_blank" rel="nofollow">html5demos.com</a><br />
+Zaimponowało mi szczególnie <a href="http://html5demos.com/geo," target="_blank" rel="nofollow">html5demos.com/geo,</a> znaleźli mnie z dokładnością 10m!<br />
+<br />
+Na spotkaniu jakoś przeszliśmy trochę obok projektu GNU Kiosk. Myślę, że warto by było się z nim zapoznać bliżej. Nawet jeśli nie będzie nadawał się do naszego wykorzystania, to z pewnością rozwiązali wiele podobnych problemów, o których my jeszcze możemy nie mieć pojęcia.<br />
+<br />
+Gdyby Kiosk się nadał, to wystarczyłoby napisać aplikacje w Javascripcie / XULu, która zarządzałaby wyświetlaniem treści. No i oczywiście dwa pozostałe elementy, czyli serwer treści i lokalny demon treści. W tej chwili wydaje mi się, że to najkrótsza droga do celu.<br />
+<br />
+pozdr.</div>
+			</td>
+
+			<td class="kcol-mid ktopictittle">
+				<a class="ktopic-title km" href="../system-prezentacji-treci/19-implementacja-window-manager.html" title="Na dzisiejszym spotkaniu podryfowaliśmy w stronę HTML5 i silników graficznych, ale ja zrobiłem prosty mockup systemu w oparciu o minimalistyczny window manager fluxbox.
+
+http://img707.imageshack.us/img707/2020/screenshotpn.jpg
+
+To co widać na obrazku to stan bezpośrednio po odpaleniu X serwera - fluxbox pozwala definiować dla konkretnych okien ustawienia rozmiarów, pozycji, dekoracji itd.
+Błękitny pasek na dole to po prostu gnome-terminal, jest też mplayer odtwarzający film oraz links (nie miałem pod ręką innej przeglądarki bez paska menu :P).
+
+Dzięki takiemu podejściu można wykorzystać istniejące już programy do wyświetlania różnych rzeczy, kosztem bajerów graficznych." rel="follow">Implementacja: Windo ...</a>												<div class="ks">
+					<!-- Category -->
+					<span class="ktopic-category">
+						Kategoria: <a href="../system-prezentacji-treci.html" title="" rel="follow">System prezentacji treści</a>					</span>
+					<!-- /Category -->
+				</div>
+			</td>
+			<td class="kcol-mid kcol-ktopiclastpost">
+				<div class="klatest-post-info">
+					<!--  Sticky   -->
+										<!--  /Sticky   -->
+					<!-- Avatar -->
+										<!-- /Avatar -->
+					<!-- By -->
+					<span class="ktopic-posted-time" title="01/13/2011 15:31">
+						Nadesłany 2 lata, 2 mies. temu&nbsp;
+					</span>
+
+										<br />
+					<span class="ktopic-by">przez <a class="kwho-admin" href="userid-62.html" title="" rel="nofollow">admin</a></span>
+										<!-- /By -->
+				</div>
+			</td>
+		</tr>
+
+				<tr class="krow1">
+			<td class="kcol-first kcol-ktopicicon">
+				<img src="../../components/com_kunena/template/default/images/icons/topic-default.gif" alt="emo" />			</td>
+
+			<td class="kcol-mid ktopictittle">
+							<div class="ktopic-title-cover">
+					<a class="ktopic-title km" href="../system-prezentacji-treci/19-implementacja-window-manager%2320.html" title="Wygląda naprawdę fajnie. Zaraz też się pobawię tym fluxboxem.
+Rzucam ciekawy artykuł odnośnie HTML 5, streszczający większość nowości w nim zawartych:
+http://www.chip.pl/artykuly/technika/2010/05/html5-nowy-jezyk-internetu/article_view?b_start:int=0&amp;-C=" rel="follow">Odp: Implementacja: Window Man ...</a>				</div>
+				<div style="display:none">Wygląda naprawdę fajnie. Zaraz też się pobawię tym fluxboxem.<br />
+Rzucam ciekawy artykuł odnośnie HTML 5, streszczający większość nowości w nim zawartych:<br />
+<a href="http://www.chip.pl/artykuly/technika/2010/05/html5-nowy-jezyk-internetu/article_view?b_start:int=0&amp;-C="  target="_blank" rel="nofollow">www.chip.pl/artykuly/technika/2010/05/ht..._start:int=0&amp;-C=</a></div>
+			</td>
+
+			<td class="kcol-mid ktopictittle">
+				<a class="ktopic-title km" href="../system-prezentacji-treci/19-implementacja-window-manager.html" title="Na dzisiejszym spotkaniu podryfowaliśmy w stronę HTML5 i silników graficznych, ale ja zrobiłem prosty mockup systemu w oparciu o minimalistyczny window manager fluxbox.
+
+http://img707.imageshack.us/img707/2020/screenshotpn.jpg
+
+To co widać na obrazku to stan bezpośrednio po odpaleniu X serwera - fluxbox pozwala definiować dla konkretnych okien ustawienia rozmiarów, pozycji, dekoracji itd.
+Błękitny pasek na dole to po prostu gnome-terminal, jest też mplayer odtwarzający film oraz links (nie miałem pod ręką innej przeglądarki bez paska menu :P).
+
+Dzięki takiemu podejściu można wykorzystać istniejące już programy do wyświetlania różnych rzeczy, kosztem bajerów graficznych." rel="follow">Implementacja: Windo ...</a>												<div class="ks">
+					<!-- Category -->
+					<span class="ktopic-category">
+						Kategoria: <a href="../system-prezentacji-treci.html" title="" rel="follow">System prezentacji treści</a>					</span>
+					<!-- /Category -->
+				</div>
+			</td>
+			<td class="kcol-mid kcol-ktopiclastpost">
+				<div class="klatest-post-info">
+					<!--  Sticky   -->
+										<!--  /Sticky   -->
+					<!-- Avatar -->
+										<!-- /Avatar -->
+					<!-- By -->
+					<span class="ktopic-posted-time" title="01/13/2011 15:31">
+						Nadesłany 2 lata, 2 mies. temu&nbsp;
+					</span>
+
+										<br />
+					<span class="ktopic-by">przez <a class="kwho-admin" href="userid-62.html" title="" rel="nofollow">admin</a></span>
+										<!-- /By -->
+				</div>
+			</td>
+		</tr>
+
+				<tr class="krow2">
+			<td class="kcol-first kcol-ktopicicon">
+				<img src="../../components/com_kunena/template/default/images/icons/topic-default.gif" alt="emo" />			</td>
+
+			<td class="kcol-mid ktopictittle">
+							<div class="ktopic-title-cover">
+					<a class="ktopic-title km" href="../system-prezentacji-treci/19-implementacja-window-manager.html" title="Na dzisiejszym spotkaniu podryfowaliśmy w stronę HTML5 i silników graficznych, ale ja zrobiłem prosty mockup systemu w oparciu o minimalistyczny window manager fluxbox.
+
+http://img707.imageshack.us/img707/2020/screenshotpn.jpg
+
+To co widać na obrazku to stan bezpośrednio po odpaleniu X serwera - fluxbox pozwala definiować dla konkretnych okien ustawienia rozmiarów, pozycji, dekoracji itd.
+Błękitny pasek na dole to po prostu gnome-terminal, jest też mplayer odtwarzający film oraz links (nie miałem pod ręką innej przeglądarki bez paska menu :P).
+
+Dzięki takiemu podejściu można wykorzystać istniejące już programy do wyświetlania różnych rzeczy, kosztem bajerów graficznych." rel="follow">Implementacja: Window Manager</a>				</div>
+				<div style="display:none">Na dzisiejszym spotkaniu podryfowaliśmy w stronę HTML5 i silników graficznych, ale ja zrobiłem prosty mockup systemu w oparciu o minimalistyczny window manager fluxbox.<br />
+<br />
+<a title="" rel="lightbox[gallery]" href="http://img707.imageshack.us/img707/2020/screenshotpn.jpg"><img src="http://img707.imageshack.us/img707/2020/screenshotpn.jpg" alt="" /></a><br />
+<br />
+To co widać na obrazku to stan bezpośrednio po odpaleniu X serwera - fluxbox pozwala definiować dla konkretnych okien ustawienia rozmiarów, pozycji, dekoracji itd.<br />
+Błękitny pasek na dole to po prostu gnome-terminal, jest też mplayer odtwarzający film oraz links (nie miałem pod ręką innej przeglądarki bez paska menu <img src="../../components/com_kunena/template/default/images/emoticons/tongue.png" alt="" style="vertical-align: middle;border:0px;" />).<br />
+<br />
+Dzięki takiemu podejściu można wykorzystać istniejące już programy do wyświetlania różnych rzeczy, kosztem bajerów graficznych.</div>
+			</td>
+
+			<td class="kcol-mid ktopictittle">
+				<a class="ktopic-title km" href="../system-prezentacji-treci/19-implementacja-window-manager.html" title="Na dzisiejszym spotkaniu podryfowaliśmy w stronę HTML5 i silników graficznych, ale ja zrobiłem prosty mockup systemu w oparciu o minimalistyczny window manager fluxbox.
+
+http://img707.imageshack.us/img707/2020/screenshotpn.jpg
+
+To co widać na obrazku to stan bezpośrednio po odpaleniu X serwera - fluxbox pozwala definiować dla konkretnych okien ustawienia rozmiarów, pozycji, dekoracji itd.
+Błękitny pasek na dole to po prostu gnome-terminal, jest też mplayer odtwarzający film oraz links (nie miałem pod ręką innej przeglądarki bez paska menu :P).
+
+Dzięki takiemu podejściu można wykorzystać istniejące już programy do wyświetlania różnych rzeczy, kosztem bajerów graficznych." rel="follow">Implementacja: Windo ...</a>												<div class="ks">
+					<!-- Category -->
+					<span class="ktopic-category">
+						Kategoria: <a href="../system-prezentacji-treci.html" title="" rel="follow">System prezentacji treści</a>					</span>
+					<!-- /Category -->
+				</div>
+			</td>
+			<td class="kcol-mid kcol-ktopiclastpost">
+				<div class="klatest-post-info">
+					<!--  Sticky   -->
+										<!--  /Sticky   -->
+					<!-- Avatar -->
+										<!-- /Avatar -->
+					<!-- By -->
+					<span class="ktopic-posted-time" title="01/13/2011 15:31">
+						Nadesłany 2 lata, 2 mies. temu&nbsp;
+					</span>
+
+										<br />
+					<span class="ktopic-by">przez <a class="kwho-admin" href="userid-62.html" title="" rel="nofollow">admin</a></span>
+										<!-- /By -->
+				</div>
+			</td>
+		</tr>
+
+				<tr class="krow1">
+			<td class="kcol-first kcol-ktopicicon">
+				<img src="../../components/com_kunena/template/default/images/icons/topic-default.gif" alt="emo" />			</td>
+
+			<td class="kcol-mid ktopictittle">
+							<div class="ktopic-title-cover">
+					<a class="ktopic-title km" href="../system-prezentacji-treci/17-technologia%2318.html" title="Trzeba najpierw podjąć decyzję na czym to uruchamiamy.
+Ja proponuje tzw. terminale.
+Proceosry VIA Epia lub intelowskie Atomy tam siedzą, ale to jest małe, malo prądu ciągnie, nie grzeje się itp.
+np: HP Thin Client" rel="follow">Odp: Technologia</a>				</div>
+				<div style="display:none">Trzeba najpierw podjąć decyzję na czym to uruchamiamy.<br />
+Ja proponuje tzw. terminale.<br />
+Proceosry VIA Epia lub intelowskie Atomy tam siedzą, ale to jest małe, malo prądu ciągnie, nie grzeje się itp.<br />
+np: HP Thin Client</div>
+			</td>
+
+			<td class="kcol-mid ktopictittle">
+				<a class="ktopic-title km" href="../system-prezentacji-treci/17-technologia.html" title="Zapadły już jakieś decyzje jaka technologia będzie wykorzystywana opisu i wyświetlania informacji?
+Myślę, że warto by rozważyć wykorzystanie HTML'a (oczywiście plus dodatki). Bardzo uniwersalne, chociaż oczywiście znacząco obciążające procesor. Trafiłem na całkiem sympatyczny projekt, który wydaje się zbliżony do naszego celu. http://kiosk.mozdev.org/" rel="follow">Technologia</a>												<div class="ks">
+					<!-- Category -->
+					<span class="ktopic-category">
+						Kategoria: <a href="../system-prezentacji-treci.html" title="" rel="follow">System prezentacji treści</a>					</span>
+					<!-- /Category -->
+				</div>
+			</td>
+			<td class="kcol-mid kcol-ktopiclastpost">
+				<div class="klatest-post-info">
+					<!--  Sticky   -->
+										<!--  /Sticky   -->
+					<!-- Avatar -->
+										<!-- /Avatar -->
+					<!-- By -->
+					<span class="ktopic-posted-time" title="01/13/2011 15:30">
+						Nadesłany 2 lata, 2 mies. temu&nbsp;
+					</span>
+
+										<br />
+					<span class="ktopic-by">przez <a class="kwho-admin" href="userid-62.html" title="" rel="nofollow">admin</a></span>
+										<!-- /By -->
+				</div>
+			</td>
+		</tr>
+
+				<tr class="krow2">
+			<td class="kcol-first kcol-ktopicicon">
+				<img src="../../components/com_kunena/template/default/images/icons/topic-default.gif" alt="emo" />			</td>
+
+			<td class="kcol-mid ktopictittle">
+							<div class="ktopic-title-cover">
+					<a class="ktopic-title km" href="../system-prezentacji-treci/17-technologia.html" title="Zapadły już jakieś decyzje jaka technologia będzie wykorzystywana opisu i wyświetlania informacji?
+Myślę, że warto by rozważyć wykorzystanie HTML'a (oczywiście plus dodatki). Bardzo uniwersalne, chociaż oczywiście znacząco obciążające procesor. Trafiłem na całkiem sympatyczny projekt, który wydaje się zbliżony do naszego celu. http://kiosk.mozdev.org/" rel="follow">Technologia</a>				</div>
+				<div style="display:none">Zapadły już jakieś decyzje jaka technologia będzie wykorzystywana opisu i wyświetlania informacji?<br />
+Myślę, że warto by rozważyć wykorzystanie HTML'a (oczywiście plus dodatki). Bardzo uniwersalne, chociaż oczywiście znacząco obciążające procesor. Trafiłem na całkiem sympatyczny projekt, który wydaje się zbliżony do naszego celu. <a href="http://kiosk.mozdev.org/" target="_blank" rel="nofollow">kiosk.mozdev.org/</a></div>
+			</td>
+
+			<td class="kcol-mid ktopictittle">
+				<a class="ktopic-title km" href="../system-prezentacji-treci/17-technologia.html" title="Zapadły już jakieś decyzje jaka technologia będzie wykorzystywana opisu i wyświetlania informacji?
+Myślę, że warto by rozważyć wykorzystanie HTML'a (oczywiście plus dodatki). Bardzo uniwersalne, chociaż oczywiście znacząco obciążające procesor. Trafiłem na całkiem sympatyczny projekt, który wydaje się zbliżony do naszego celu. http://kiosk.mozdev.org/" rel="follow">Technologia</a>												<div class="ks">
+					<!-- Category -->
+					<span class="ktopic-category">
+						Kategoria: <a href="../system-prezentacji-treci.html" title="" rel="follow">System prezentacji treści</a>					</span>
+					<!-- /Category -->
+				</div>
+			</td>
+			<td class="kcol-mid kcol-ktopiclastpost">
+				<div class="klatest-post-info">
+					<!--  Sticky   -->
+										<!--  /Sticky   -->
+					<!-- Avatar -->
+										<!-- /Avatar -->
+					<!-- By -->
+					<span class="ktopic-posted-time" title="01/13/2011 15:30">
+						Nadesłany 2 lata, 2 mies. temu&nbsp;
+					</span>
+
+										<br />
+					<span class="ktopic-by">przez <a class="kwho-admin" href="userid-62.html" title="" rel="nofollow">admin</a></span>
+										<!-- /By -->
+				</div>
+			</td>
+		</tr>
+
+				<tr class="krow1">
+			<td class="kcol-first kcol-ktopicicon">
+				<img src="../../components/com_kunena/template/default/images/icons/topic-default.gif" alt="emo" />			</td>
+
+			<td class="kcol-mid ktopictittle">
+							<div class="ktopic-title-cover">
+					<a class="ktopic-title km" href="../system-prezentacji-treci/12-nazwa-dla-projektu%2316.html" title="Mi się podoba :)" rel="follow">Odp: Nazwa dla projektu</a>				</div>
+				<div style="display:none">Mi się podoba <img src="../../components/com_kunena/template/default/images/emoticons/smile.png" alt="" style="vertical-align: middle;border:0px;" /></div>
+			</td>
+
+			<td class="kcol-mid ktopictittle">
+				<a class="ktopic-title km" href="../system-prezentacji-treci/12-nazwa-dla-projektu.html" title="Wymyśliłem 8 propozycji nazw, ale po selfselekcji wybrałem jedną propozycję, może się spodoba, albo podsunie komuś jakiś pomysł. Oto moja propozycja nazwy dla projektu:
+UniversiTV, jako przekształcenie od University, bo początkowym &quot;zleceniobiorcą&quot; będzie wydział, a później uczelnia i dlatego tak mi się skojarzyło, zamiana ostatniej litery &quot;Y&quot; na &quot;V&quot;. Nazwa może też przywodzić na myśl uniwersalizm całego systemu prezentacji treści. Ew. przy tworzeniu tego napisu możnaby było dodać ogonek do V, by jednocześnie kojarzyło się z Y, jak i V.
+UniversiTV ;)
+
+Tyle ode mnie, pozdrawiam.
+PS. Nie ukrywam, że propozycja może mieć trochę komercyjny wydźwięk-tak mi się wydaje, bo idąc w drugą stronę można utworzyć jakiś wieloliterowy skrót, który na pierwszy rzut oka nie będzie sie kojarzył z SPT, ale tak wrzuciłem, może kogoś natchnie ;)" rel="follow">Nazwa dla projektu</a>												<div class="ks">
+					<!-- Category -->
+					<span class="ktopic-category">
+						Kategoria: <a href="../system-prezentacji-treci.html" title="" rel="follow">System prezentacji treści</a>					</span>
+					<!-- /Category -->
+				</div>
+			</td>
+			<td class="kcol-mid kcol-ktopiclastpost">
+				<div class="klatest-post-info">
+					<!--  Sticky   -->
+										<!--  /Sticky   -->
+					<!-- Avatar -->
+										<!-- /Avatar -->
+					<!-- By -->
+					<span class="ktopic-posted-time" title="01/13/2011 15:29">
+						Nadesłany 2 lata, 2 mies. temu&nbsp;
+					</span>
+
+										<br />
+					<span class="ktopic-by">przez <a class="kwho-admin" href="userid-62.html" title="" rel="nofollow">admin</a></span>
+										<!-- /By -->
+				</div>
+			</td>
+		</tr>
+
+				<tr class="krow2">
+			<td class="kcol-first kcol-ktopicicon">
+				<img src="../../components/com_kunena/template/default/images/icons/topic-default.gif" alt="emo" />			</td>
+
+			<td class="kcol-mid ktopictittle">
+							<div class="ktopic-title-cover">
+					<a class="ktopic-title km" href="../system-prezentacji-treci/12-nazwa-dla-projektu%2315.html" title="EmTV - &quot;Embedded Television&quot; a i wymowa ciekawa ;)" rel="follow">Odp: Nazwa dla projektu</a>				</div>
+				<div style="display:none">EmTV - &quot;Embedded Television&quot; a i wymowa ciekawa <img src="../../components/com_kunena/template/default/images/emoticons/wink.png" alt="" style="vertical-align: middle;border:0px;" /></div>
+			</td>
+
+			<td class="kcol-mid ktopictittle">
+				<a class="ktopic-title km" href="../system-prezentacji-treci/12-nazwa-dla-projektu.html" title="Wymyśliłem 8 propozycji nazw, ale po selfselekcji wybrałem jedną propozycję, może się spodoba, albo podsunie komuś jakiś pomysł. Oto moja propozycja nazwy dla projektu:
+UniversiTV, jako przekształcenie od University, bo początkowym &quot;zleceniobiorcą&quot; będzie wydział, a później uczelnia i dlatego tak mi się skojarzyło, zamiana ostatniej litery &quot;Y&quot; na &quot;V&quot;. Nazwa może też przywodzić na myśl uniwersalizm całego systemu prezentacji treści. Ew. przy tworzeniu tego napisu możnaby było dodać ogonek do V, by jednocześnie kojarzyło się z Y, jak i V.
+UniversiTV ;)
+
+Tyle ode mnie, pozdrawiam.
+PS. Nie ukrywam, że propozycja może mieć trochę komercyjny wydźwięk-tak mi się wydaje, bo idąc w drugą stronę można utworzyć jakiś wieloliterowy skrót, który na pierwszy rzut oka nie będzie sie kojarzył z SPT, ale tak wrzuciłem, może kogoś natchnie ;)" rel="follow">Nazwa dla projektu</a>												<div class="ks">
+					<!-- Category -->
+					<span class="ktopic-category">
+						Kategoria: <a href="../system-prezentacji-treci.html" title="" rel="follow">System prezentacji treści</a>					</span>
+					<!-- /Category -->
+				</div>
+			</td>
+			<td class="kcol-mid kcol-ktopiclastpost">
+				<div class="klatest-post-info">
+					<!--  Sticky   -->
+										<!--  /Sticky   -->
+					<!-- Avatar -->
+										<!-- /Avatar -->
+					<!-- By -->
+					<span class="ktopic-posted-time" title="01/13/2011 15:29">
+						Nadesłany 2 lata, 2 mies. temu&nbsp;
+					</span>
+
+										<br />
+					<span class="ktopic-by">przez <a class="kwho-admin" href="userid-62.html" title="" rel="nofollow">admin</a></span>
+										<!-- /By -->
+				</div>
+			</td>
+		</tr>
+
+				<tr class="krow1">
+			<td class="kcol-first kcol-ktopicicon">
+				<img src="../../components/com_kunena/template/default/images/icons/topic-default.gif" alt="emo" />			</td>
+
+			<td class="kcol-mid ktopictittle">
+							<div class="ktopic-title-cover">
+					<a class="ktopic-title km" href="../system-prezentacji-treci/12-nazwa-dla-projektu%2314.html" title="Xinfo, Xset, Xcast, ( Xbox ), XD, infoX, setX, WYSIWTF, Pandora" rel="follow">Odp: Nazwa dla projektu</a>				</div>
+				<div style="display:none">Xinfo, Xset, Xcast, ( Xbox ), XD, infoX, setX, WYSIWTF, Pandora</div>
+			</td>
+
+			<td class="kcol-mid ktopictittle">
+				<a class="ktopic-title km" href="../system-prezentacji-treci/12-nazwa-dla-projektu.html" title="Wymyśliłem 8 propozycji nazw, ale po selfselekcji wybrałem jedną propozycję, może się spodoba, albo podsunie komuś jakiś pomysł. Oto moja propozycja nazwy dla projektu:
+UniversiTV, jako przekształcenie od University, bo początkowym &quot;zleceniobiorcą&quot; będzie wydział, a później uczelnia i dlatego tak mi się skojarzyło, zamiana ostatniej litery &quot;Y&quot; na &quot;V&quot;. Nazwa może też przywodzić na myśl uniwersalizm całego systemu prezentacji treści. Ew. przy tworzeniu tego napisu możnaby było dodać ogonek do V, by jednocześnie kojarzyło się z Y, jak i V.
+UniversiTV ;)
+
+Tyle ode mnie, pozdrawiam.
+PS. Nie ukrywam, że propozycja może mieć trochę komercyjny wydźwięk-tak mi się wydaje, bo idąc w drugą stronę można utworzyć jakiś wieloliterowy skrót, który na pierwszy rzut oka nie będzie sie kojarzył z SPT, ale tak wrzuciłem, może kogoś natchnie ;)" rel="follow">Nazwa dla projektu</a>												<div class="ks">
+					<!-- Category -->
+					<span class="ktopic-category">
+						Kategoria: <a href="../system-prezentacji-treci.html" title="" rel="follow">System prezentacji treści</a>					</span>
+					<!-- /Category -->
+				</div>
+			</td>
+			<td class="kcol-mid kcol-ktopiclastpost">
+				<div class="klatest-post-info">
+					<!--  Sticky   -->
+										<!--  /Sticky   -->
+					<!-- Avatar -->
+										<!-- /Avatar -->
+					<!-- By -->
+					<span class="ktopic-posted-time" title="01/13/2011 15:28">
+						Nadesłany 2 lata, 2 mies. temu&nbsp;
+					</span>
+
+										<br />
+					<span class="ktopic-by">przez <a class="kwho-admin" href="userid-62.html" title="" rel="nofollow">admin</a></span>
+										<!-- /By -->
+				</div>
+			</td>
+		</tr>
+
+				<tr class="krow2">
+			<td class="kcol-first kcol-ktopicicon">
+				<img src="../../components/com_kunena/template/default/images/icons/topic-default.gif" alt="emo" />			</td>
+
+			<td class="kcol-mid ktopictittle">
+							<div class="ktopic-title-cover">
+					<a class="ktopic-title km" href="../system-prezentacji-treci/12-nazwa-dla-projektu%2313.html" title="Pomysł ciekawy, chociaż na mój gust troszkę zbyt mało techniczny. W końcu w projekcie nie chodzi o robienie telewizji, a raczej telewizora :) Idąc tym tropem można by było pomyśleć nad czymś w rodzaju &quot;InfoSet&quot;, w nawiązaniu do &quot;TV set&quot;. Mógłby być też &quot;Infobox&quot;, ale to już zajęte przez konkurencje. http://info-box.pl/" rel="follow">Odp: Nazwa dla projektu</a>				</div>
+				<div style="display:none">Pomysł ciekawy, chociaż na mój gust troszkę zbyt mało techniczny. W końcu w projekcie nie chodzi o robienie telewizji, a raczej telewizora <img src="../../components/com_kunena/template/default/images/emoticons/smile.png" alt="" style="vertical-align: middle;border:0px;" /> Idąc tym tropem można by było pomyśleć nad czymś w rodzaju &quot;InfoSet&quot;, w nawiązaniu do &quot;TV set&quot;. Mógłby być też &quot;Infobox&quot;, ale to już zajęte przez konkurencje. <a href="http://info-box.pl/" target="_blank" rel="nofollow">info-box.pl/</a></div>
+			</td>
+
+			<td class="kcol-mid ktopictittle">
+				<a class="ktopic-title km" href="../system-prezentacji-treci/12-nazwa-dla-projektu.html" title="Wymyśliłem 8 propozycji nazw, ale po selfselekcji wybrałem jedną propozycję, może się spodoba, albo podsunie komuś jakiś pomysł. Oto moja propozycja nazwy dla projektu:
+UniversiTV, jako przekształcenie od University, bo początkowym &quot;zleceniobiorcą&quot; będzie wydział, a później uczelnia i dlatego tak mi się skojarzyło, zamiana ostatniej litery &quot;Y&quot; na &quot;V&quot;. Nazwa może też przywodzić na myśl uniwersalizm całego systemu prezentacji treści. Ew. przy tworzeniu tego napisu możnaby było dodać ogonek do V, by jednocześnie kojarzyło się z Y, jak i V.
+UniversiTV ;)
+
+Tyle ode mnie, pozdrawiam.
+PS. Nie ukrywam, że propozycja może mieć trochę komercyjny wydźwięk-tak mi się wydaje, bo idąc w drugą stronę można utworzyć jakiś wieloliterowy skrót, który na pierwszy rzut oka nie będzie sie kojarzył z SPT, ale tak wrzuciłem, może kogoś natchnie ;)" rel="follow">Nazwa dla projektu</a>												<div class="ks">
+					<!-- Category -->
+					<span class="ktopic-category">
+						Kategoria: <a href="../system-prezentacji-treci.html" title="" rel="follow">System prezentacji treści</a>					</span>
+					<!-- /Category -->
+				</div>
+			</td>
+			<td class="kcol-mid kcol-ktopiclastpost">
+				<div class="klatest-post-info">
+					<!--  Sticky   -->
+										<!--  /Sticky   -->
+					<!-- Avatar -->
+										<!-- /Avatar -->
+					<!-- By -->
+					<span class="ktopic-posted-time" title="01/13/2011 15:28">
+						Nadesłany 2 lata, 2 mies. temu&nbsp;
+					</span>
+
+										<br />
+					<span class="ktopic-by">przez <a class="kwho-admin" href="userid-62.html" title="" rel="nofollow">admin</a></span>
+										<!-- /By -->
+				</div>
+			</td>
+		</tr>
+
+				<tr class="krow1">
+			<td class="kcol-first kcol-ktopicicon">
+				<img src="../../components/com_kunena/template/default/images/icons/topic-default.gif" alt="emo" />			</td>
+
+			<td class="kcol-mid ktopictittle">
+							<div class="ktopic-title-cover">
+					<a class="ktopic-title km" href="../system-prezentacji-treci/12-nazwa-dla-projektu.html" title="Wymyśliłem 8 propozycji nazw, ale po selfselekcji wybrałem jedną propozycję, może się spodoba, albo podsunie komuś jakiś pomysł. Oto moja propozycja nazwy dla projektu:
+UniversiTV, jako przekształcenie od University, bo początkowym &quot;zleceniobiorcą&quot; będzie wydział, a później uczelnia i dlatego tak mi się skojarzyło, zamiana ostatniej litery &quot;Y&quot; na &quot;V&quot;. Nazwa może też przywodzić na myśl uniwersalizm całego systemu prezentacji treści. Ew. przy tworzeniu tego napisu możnaby było dodać ogonek do V, by jednocześnie kojarzyło się z Y, jak i V.
+UniversiTV ;)
+
+Tyle ode mnie, pozdrawiam.
+PS. Nie ukrywam, że propozycja może mieć trochę komercyjny wydźwięk-tak mi się wydaje, bo idąc w drugą stronę można utworzyć jakiś wieloliterowy skrót, który na pierwszy rzut oka nie będzie sie kojarzył z SPT, ale tak wrzuciłem, może kogoś natchnie ;)" rel="follow">Nazwa dla projektu</a>				</div>
+				<div style="display:none">Wymyśliłem 8 propozycji nazw, ale po selfselekcji wybrałem jedną propozycję, może się spodoba, albo podsunie komuś jakiś pomysł. Oto moja propozycja nazwy dla projektu:<br />
+UniversiTV, jako przekształcenie od University, bo początkowym &quot;zleceniobiorcą&quot; będzie wydział, a później uczelnia i dlatego tak mi się skojarzyło, zamiana ostatniej litery &quot;Y&quot; na &quot;V&quot;. Nazwa może też przywodzić na myśl uniwersalizm całego systemu prezentacji treści. Ew. przy tworzeniu tego napisu możnaby było dodać ogonek do V, by jednocześnie kojarzyło się z Y, jak i V.<br />
+UniversiTV <img src="../../components/com_kunena/template/default/images/emoticons/wink.png" alt="" style="vertical-align: middle;border:0px;" /><br />
+<br />
+Tyle ode mnie, pozdrawiam.<br />
+PS. Nie ukrywam, że propozycja może mieć trochę komercyjny wydźwięk-tak mi się wydaje, bo idąc w drugą stronę można utworzyć jakiś wieloliterowy skrót, który na pierwszy rzut oka nie będzie sie kojarzył z SPT, ale tak wrzuciłem, może kogoś natchnie <img src="../../components/com_kunena/template/default/images/emoticons/wink.png" alt="" style="vertical-align: middle;border:0px;" /></div>
+			</td>
+
+			<td class="kcol-mid ktopictittle">
+				<a class="ktopic-title km" href="../system-prezentacji-treci/12-nazwa-dla-projektu.html" title="Wymyśliłem 8 propozycji nazw, ale po selfselekcji wybrałem jedną propozycję, może się spodoba, albo podsunie komuś jakiś pomysł. Oto moja propozycja nazwy dla projektu:
+UniversiTV, jako przekształcenie od University, bo początkowym &quot;zleceniobiorcą&quot; będzie wydział, a później uczelnia i dlatego tak mi się skojarzyło, zamiana ostatniej litery &quot;Y&quot; na &quot;V&quot;. Nazwa może też przywodzić na myśl uniwersalizm całego systemu prezentacji treści. Ew. przy tworzeniu tego napisu możnaby było dodać ogonek do V, by jednocześnie kojarzyło się z Y, jak i V.
+UniversiTV ;)
+
+Tyle ode mnie, pozdrawiam.
+PS. Nie ukrywam, że propozycja może mieć trochę komercyjny wydźwięk-tak mi się wydaje, bo idąc w drugą stronę można utworzyć jakiś wieloliterowy skrót, który na pierwszy rzut oka nie będzie sie kojarzył z SPT, ale tak wrzuciłem, może kogoś natchnie ;)" rel="follow">Nazwa dla projektu</a>												<div class="ks">
+					<!-- Category -->
+					<span class="ktopic-category">
+						Kategoria: <a href="../system-prezentacji-treci.html" title="" rel="follow">System prezentacji treści</a>					</span>
+					<!-- /Category -->
+				</div>
+			</td>
+			<td class="kcol-mid kcol-ktopiclastpost">
+				<div class="klatest-post-info">
+					<!--  Sticky   -->
+										<!--  /Sticky   -->
+					<!-- Avatar -->
+										<!-- /Avatar -->
+					<!-- By -->
+					<span class="ktopic-posted-time" title="01/13/2011 15:28">
+						Nadesłany 2 lata, 2 mies. temu&nbsp;
+					</span>
+
+										<br />
+					<span class="ktopic-by">przez <a class="kwho-admin" href="userid-62.html" title="" rel="nofollow">admin</a></span>
+										<!-- /By -->
+				</div>
+			</td>
+		</tr>
+
+						<!-- Bulk Actions -->
+		<tr class="krow1">
+			<td colspan="7" class="kcol-first krowmoderation">
+				<a href="../ostatnie/userposts.html" title="" rel="follow">COM_KUNENA_MORE</a>			</td>
+		</tr>
+		<!-- /Bulk Actions -->
+		</table>
+</div>
+</div>
+</div>
+<input type="hidden" name="option" value="com_kunena" />
+<input type="hidden" name="func" value="bulkactions" />
+<input type="hidden" name="9fcc2372f6f7b7e279ae1a53b1d4f19d" value="1" /></form>		</dd>
+											</dl>
+</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+<div class="krss-block"><a href="../rsshtml.html" title="" rel="follow" target="_blank"><span class="kicon krss" title="Pobierz nagłówki ostatnich postów."></span></a></div><div class="kcredits kms"> <a href="../credits.html" title="" rel="follow">Zasilane przez</a> <a href="http://www.kunena.org/" title="Kunena" rel="follow" target="_blank">Kunena</a></div>	<div class="kfooter">
+		<span class="kfooter-time">Wygenerowano w&nbsp;0.38&nbsp;sekundy</span>
+	</div>
+</div>
+<!-- closes Kunena div -->
+
+				</div>
+				<div class="clearBoth"></div>
+			</div>
+		</div>
+	</div>
+	<div id="btmPanelWrapperTopLeft">
+		<div id="btmPanelWrapperTopRight">
+			<div id="btmPanelWrapperTop">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="bottomBar">
+	Copyright &copy; 2010 – Template by <a href="../../index.html" target="_blank">KOTIK</a> on the <a href="http://www.gnu.org/licenses/gpl-3.0.txt">GPLv3</a> license.
+	<a href="#top" class="topLink">Wróć na górę</a>
+</div>
+	
+</body>
+
+<!-- Mirrored from kotik.iem.pw.edu.pl/forum/profile/userid-62 by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 26 Mar 2013 00:41:58 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+</html>

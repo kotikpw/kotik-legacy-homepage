@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! 1.5 - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>FOOL</title>
+		<description>KOTIK - Koło Otwartych Technik Informacyjnych i Komputerowych</description>
+		<link>http://kotik.iem.pw.edu.pl/fool</link>
+		<lastBuildDate>Mon, 25 Mar 2013 22:23:03 +0000</lastBuildDate>
+		<generator>Joomla! 1.5 - Open Source Content Management</generator>
+		<language>pl-pl</language>
+		<item>
+			<title>Spotkanie 1</title>
+			<link>http://kotik.iem.pw.edu.pl/fool/28-spotkanie-1</link>
+			<guid>http://kotik.iem.pw.edu.pl/fool/28-spotkanie-1</guid>
+			<description><![CDATA[<p>Wybrany system kontroli wersji:</p>
+<ul>
+<li>Launchpad <a href="https://launchpad.net/">https://launchpad.net/</a></li>
+</ul>
+<p>Wybrana metodyka</p>
+<ul>
+<li>TDD <a href="http://en.wikipedia.org/wiki/Test-driven_development">http://en.wikipedia.org/wiki/Test-driven_development</a></li>
+</ul>
+<p>Wymagania funkcjonalne wersji 0.0.1</p>
+<ul>
+<li>widok główny zawiera domyślnie 4 okna: 
+<ul>
+<li>okno kodu - okno, w którym użytkownik może wprowadzić kod asemblera, zawiera menu (przyciski): 
+<ul>
+<li>uruchom</li>
+<li>uruchom ze śledzeniem instrukcji</li>
+<li>wykonaj następną instrukcję</li>
+<li>przerwij program</li>
+<li>wznów program</li>
+<li>zakończ program</li>
+</ul>
+</li>
+<li>okno pamięci - pokazuje stan pamięci</li>
+<li>okno rejestrów - pokazuje stan rejestrów</li>
+<li>okno schematu - pokazuje predefiniowany schemat mikrokontrolera</li>
+</ul>
+</li>
+<li>użytkownik może ukryć/pokazać każde z okien</li>
+<li>użytkownik może kazać programowi wykonanie wprowadzonego kodu  asemblera (wybiera opcję "uruchom", "uruchom ze śledzeniem instrukcji"  lub "wykonaj następną instrukcję") 
+<ul>
+<li>program wykonuje kod wprowadzony w oknie kodu zmieniając stan pamięci, rejestrów i wyjścia</li>
+</ul>
+</li>
+<li>użytkownik może na bieżąco śledzić w oknie kodu wykonywane  instrukcje (wybiera opcję "uruchom ze śledzeniem instrukcji", przydałoby  się opóźnić "skok" do następnej instrukcji, by animacja była płynna)</li>
+<li>użytkownik może zatrzymać działanie programu w dowolnej chwili  (wybiera opcję "przerwij program") a następnie wznowić jego działanie z  tego samego momentu (wybiera opcję "wznów program")</li>
+<li>użytkownik może zakończyć działanie programu w dowolnej chwili (wybiera opcję "zakończ program")</li>
+<li>użytkownik może wykonać jedną, następną instrukcję (wybiera opcję "wykonaj następną instrukcję")</li>
+<li>program powinien być kompatybilny z rzeczywistym procesorem  (wprowadzony kod powinien działać tak samo w naszym emulatorze, w RIDE i  na rzeczywistym procesorze)</li>
+</ul>
+<p>Jak to zrobimy (i w jakiej kolejności ;))?</p>
+<ul>
+<li>stworzymy najpierw emulator procesora 8051 (moduł czytający z  pamięci kolejne opkody i wykonujący operacje na pamięci, rejestrach  itd.)</li>
+<li>kod asemblera będzie tłumaczony na kod maszynowy (asemblacja) i umieszczany w pamięci</li>
+<li>zaprojektujemy GUI używając odpowiedniej biblioteki (np. jQuery UI): okienka kodu, pamięci i rejestrów.</li>
+<li>początki interfejsu do tworzenia układów (flash)</li>
+</ul>
+<p>Oczywiście zanim przystąpimy do pisania właściwego kodu będziemy,  zgodnie z TDD, pisać odpowiednie testy (może potem wrzuci się tu linka z  jakimś artykułem o dobrych i złych praktykach pisania testów w TDD).</p>]]></description>
+			<author>kotik@iem.pw.edu.pl (Administrator)</author>
+			<category>FOOL</category>
+			<pubDate>Sat, 16 Oct 2010 18:18:58 +0000</pubDate>
+		</item>
+		<item>
+			<title>Wirtualne Laboratorium Techniki Mikroprocesorowej </title>
+			<link>http://kotik.iem.pw.edu.pl/fool/27-wirtualne-laboratorium-techniki-mikroprocesorowej-</link>
+			<guid>http://kotik.iem.pw.edu.pl/fool/27-wirtualne-laboratorium-techniki-mikroprocesorowej-</guid>
+			<description><![CDATA[<h1 id="toc0"><span>Co robimy?</span></h1>
+<p>Chcemy osiągnąć środowisko, w którym będzie można:</p>
+<ul>
+<li>pisać kod i go assemblować.</li>
+<li>debuggować kod (i widzieć które linie się wykonują w mnemonikach, a nie tylko w heksach).</li>
+<li>otoczyć nasz wirtualny mikroprocesor urządzeniami - diodami,  oscyloskopami, przyciskami, wyświetlaczami i nauczyć go z nimi  współpracować.</li>
+</ul>
+<p>Chcielibyśmy, żeby uruchomienie tego środowiska wymagało jak najmniej  pracy od potencjalnych użytkowników i żeby nasze środowisko było łatwe  do rozszerzenia o dodatkowe urządzenia, które można podłączyć do  mikroprocesora.</p>
+<h1 id="toc1"><span>Dlaczego to robimy?</span></h1>
+<p>Bo takie środowisko nie istnieje :-)</p>
+<p>Istniejące otwarte emulatory:</p>
+<ul>
+<li><a href="http://gsim51.sourceforge.net/">gsim51</a> - służy tylko do uruchamiania już skompilowanych plików hex, wymaga kompilacji.</li>
+<li><a href="http://gsim51.sourceforge.net/">emu8051</a> - dokładnie jak wyżej, ponadto <a href="http://i.imgur.com/jrIcy.png">wygląda paskudnie</a>.</li>
+<li><a href="http://emu51.sourceforge.net/">emu51</a> - wymaga  kompilacji, obecnie przystosowany tylko do windowsa, służy do  uruchamiania plików hex, wymaga allegro w wersji z 2003 roku.</li>
+</ul>
+<h1 id="toc2"><span>Jak to robimy?</span></h1>
+<ul>
+<li>Kod i błędy trzymamy na <a href="https://launchpad.net/fool">Launchpadzie</a>.</li>
+<li>Stosujemy TDD, a testy piszemy w <a href="http://code.google.com/p/js-test-driver/">JS-test-driver</a>.</li>
+<li>Stosujemy <a href="http://javascript.crockford.com/code.html">następujące konwencje zapisu kodu</a>.</li>
+</ul>
+<hr />
+<p>Materiały dla członków zespołu:</p>
+<ul>
+<li><a href="http://www.8052.com/">Dobry tutorial pisania asma na 8051</a></li>
+<li><a href="http://turbo51.com/8051-projects-documentation-tools">baza konkretnej wiedzy - opis rozkazów i opkody</a></li>
+<li><a href="http://code.google.com/p/js-test-driver/">Dokumentacja JS-test-driver</a> - frameworku do testowania JS</li>
+<li><a href="https://developer.mozilla.org/en/A_re-introduction_to_JavaScript">Szybkie wprowadzenie do JS</a></li>
+<li><a href="http://www.jslint.com/">JSLint</a></li>
+<li><a href="http://javascript.crockford.com/code.html">przykładowe code conventions</a>.</li>
+</ul>]]></description>
+			<author>kotik@iem.pw.edu.pl (Administrator)</author>
+			<category>FOOL</category>
+			<pubDate>Sat, 16 Oct 2010 18:17:53 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

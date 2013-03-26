@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! 1.5 - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Projekty</title>
+		<description>KOTIK - Koło Otwartych Technik Informacyjnych i Komputerowych</description>
+		<link>http://kotik.iem.pw.edu.pl/projekty</link>
+		<lastBuildDate>Mon, 25 Mar 2013 22:19:21 +0000</lastBuildDate>
+		<generator>Joomla! 1.5 - Open Source Content Management</generator>
+		<language>pl-pl</language>
+		<item>
+			<title>Efekt 3D w Modelowaniu Przestrzennym </title>
+			<link>http://kotik.iem.pw.edu.pl/3d/29-efekt-3d-w-modelowaniu-przestrzennym-</link>
+			<guid>http://kotik.iem.pw.edu.pl/3d/29-efekt-3d-w-modelowaniu-przestrzennym-</guid>
+			<description><![CDATA[<div id="page-content">
+<p>Wstępne pomysły dotyczące tego projektu.</p>
+<h1 id="toc0"><span>Plan działania</span></h1>
+<ol>
+<li>Określenie środowiska pracy</li>
+<li>Etapy pracy</li>
+</ol>
+<h2 id="toc1"><span>Określenie środowiska pracy</span></h2>
+<p>Ze względu na to że koło ma propagować otwarte standardy trzeba stosować otwarte systemy.<br /> Do wyboru mamy FreeBSD lub Linuxa. Według mnie lepszym rozwiązaniem będzie Linux.<br /> Jako język programowania proponuję C/C++.<br /> Jeszcze zostaje wybranie gry na którą później będziemy pracowali.</p>
+<hr />
+<p><span class="printuser"><a href="http://www.wikidot.com/user:info/cmaster">cmaster</a></span>:  Ja bym się skupił żeby najpierw zrobić silnik graficzny umożliwiający  "nasze" efekty… Chyba że myślimy o przerabianiu gotowej gry (!). Innymi  słowy ja bym na początek zrobił proste demo z wszechobecnym imbryczkiem w  roli głównej…<br /> <span class="printuser"><a href="http://www.wikidot.com/user:info/nerull7">nerull7</a></span>:  Jedyne co jest do przerobienia w grze to ustawienie kamery użytkownika.  Głównie chodzi mi o napisanie algorytmu obsługi tej kamery.</p>
+<hr />
+<h2 id="toc2"><span>Etapy pracy</span></h2>
+<ol>
+<li>Dyskusja nt. projektu</li>
+<li>Uzgodnienie ostatecznego kształtu projektu</li>
+<li>Pisanie kodu rozpoznawania twarzy oraz jej przybliżonej pozycji w przestrzeni</li>
+<li>Implementacja kodu w grze</li>
+</ol></div>]]></description>
+			<author>kotik@iem.pw.edu.pl (Administrator)</author>
+			<category>3D</category>
+			<pubDate>Sat, 16 Oct 2010 18:20:49 +0000</pubDate>
+		</item>
+		<item>
+			<title>Spotkanie 1</title>
+			<link>http://kotik.iem.pw.edu.pl/fool/28-spotkanie-1</link>
+			<guid>http://kotik.iem.pw.edu.pl/fool/28-spotkanie-1</guid>
+			<description><![CDATA[<p>Wybrany system kontroli wersji:</p>
+<ul>
+<li>Launchpad <a href="https://launchpad.net/">https://launchpad.net/</a></li>
+</ul>
+<p>Wybrana metodyka</p>
+<ul>
+<li>TDD <a href="http://en.wikipedia.org/wiki/Test-driven_development">http://en.wikipedia.org/wiki/Test-driven_development</a></li>
+</ul>
+<p>Wymagania funkcjonalne wersji 0.0.1</p>
+<ul>
+<li>widok główny zawiera domyślnie 4 okna: 
+<ul>
+<li>okno kodu - okno, w którym użytkownik może wprowadzić kod asemblera, zawiera menu (przyciski): 
+<ul>
+<li>uruchom</li>
+<li>uruchom ze śledzeniem instrukcji</li>
+<li>wykonaj następną instrukcję</li>
+<li>przerwij program</li>
+<li>wznów program</li>
+<li>zakończ program</li>
+</ul>
+</li>
+<li>okno pamięci - pokazuje stan pamięci</li>
+<li>okno rejestrów - pokazuje stan rejestrów</li>
+<li>okno schematu - pokazuje predefiniowany schemat mikrokontrolera</li>
+</ul>
+</li>
+<li>użytkownik może ukryć/pokazać każde z okien</li>
+<li>użytkownik może kazać programowi wykonanie wprowadzonego kodu  asemblera (wybiera opcję "uruchom", "uruchom ze śledzeniem instrukcji"  lub "wykonaj następną instrukcję") 
+<ul>
+<li>program wykonuje kod wprowadzony w oknie kodu zmieniając stan pamięci, rejestrów i wyjścia</li>
+</ul>
+</li>
+<li>użytkownik może na bieżąco śledzić w oknie kodu wykonywane  instrukcje (wybiera opcję "uruchom ze śledzeniem instrukcji", przydałoby  się opóźnić "skok" do następnej instrukcji, by animacja była płynna)</li>
+<li>użytkownik może zatrzymać działanie programu w dowolnej chwili  (wybiera opcję "przerwij program") a następnie wznowić jego działanie z  tego samego momentu (wybiera opcję "wznów program")</li>
+<li>użytkownik może zakończyć działanie programu w dowolnej chwili (wybiera opcję "zakończ program")</li>
+<li>użytkownik może wykonać jedną, następną instrukcję (wybiera opcję "wykonaj następną instrukcję")</li>
+<li>program powinien być kompatybilny z rzeczywistym procesorem  (wprowadzony kod powinien działać tak samo w naszym emulatorze, w RIDE i  na rzeczywistym procesorze)</li>
+</ul>
+<p>Jak to zrobimy (i w jakiej kolejności ;))?</p>
+<ul>
+<li>stworzymy najpierw emulator procesora 8051 (moduł czytający z  pamięci kolejne opkody i wykonujący operacje na pamięci, rejestrach  itd.)</li>
+<li>kod asemblera będzie tłumaczony na kod maszynowy (asemblacja) i umieszczany w pamięci</li>
+<li>zaprojektujemy GUI używając odpowiedniej biblioteki (np. jQuery UI): okienka kodu, pamięci i rejestrów.</li>
+<li>początki interfejsu do tworzenia układów (flash)</li>
+</ul>
+<p>Oczywiście zanim przystąpimy do pisania właściwego kodu będziemy,  zgodnie z TDD, pisać odpowiednie testy (może potem wrzuci się tu linka z  jakimś artykułem o dobrych i złych praktykach pisania testów w TDD).</p>]]></description>
+			<author>kotik@iem.pw.edu.pl (Administrator)</author>
+			<category>FOOL</category>
+			<pubDate>Sat, 16 Oct 2010 18:18:58 +0000</pubDate>
+		</item>
+		<item>
+			<title>Specyfikacja implementacyjna </title>
+			<link>http://kotik.iem.pw.edu.pl/system-prezentacji-tresci/26-specyfikacja-implementacyjna-</link>
+			<guid>http://kotik.iem.pw.edu.pl/system-prezentacji-tresci/26-specyfikacja-implementacyjna-</guid>
+			<description><![CDATA[<p>Specyfikacja implementacyjna</p>
+<div id="page-content">
+<div class="image-container floatright"><img class="image" src="http://kotik.wikidot.com/local--files/projekt:spt-implementacyjna/spt.png" border="0" alt="spt.png" /></div>
+<ul>
+<li>oparty na systemie operacyjnym Linux</li>
+<li>2 niezależne procesy (wyświetlanie i zarządzanie) klienta: 
+<ul>
+<li>wyświetlanie - własny lub przerobiony WM pod X11</li>
+<li>zarządzanie - demon pracujący w tle</li>
+</ul>
+</li>
+</ul>
+<h1 id="toc0"><span>Wybór sprzętu i języka programowania</span></h1>
+<p>Po stworzeniu prototypu, można przejść do realizacji systemu na  Wydziale (ekran + sprzęt). W tym celu musimy wybrać sprzętu i zdecydować  się na język programowania. Sprzęt będzie nam ograniczał dostępne  języki i odwrotnie. Musimy także uwzględnić całkowity koszt obranego  rozwiązania, a także wziąć pod uwagę koszty eksploatacyjne.</p>
+<p>Dobrze by było wybrać kilka języków programowania najlepiej  nadających się do naszego projektu i pod ich kątem przeglądać możliwe  rozwiązania sprzętowe. Z uwagi na charakter koła chcielibyśmy też aby  sprzęt był w miarę "otwarty" - dobra dokumentacja, swobodna możliwość  "hackowania".</p>
+</div>]]></description>
+			<author>kotik@iem.pw.edu.pl (Administrator)</author>
+			<category>System Prezentacji Treści</category>
+			<pubDate>Sat, 16 Oct 2010 18:16:33 +0000</pubDate>
+		</item>
+		<item>
+			<title>Spotkanie 1</title>
+			<link>http://kotik.iem.pw.edu.pl/google-killer/22-spotkanie-1</link>
+			<guid>http://kotik.iem.pw.edu.pl/google-killer/22-spotkanie-1</guid>
+			<description><![CDATA[<p>Wreszcie udało się ruszyć z miejsca. Pierwsze  spotkanie projektu o kryptonimie "google killer" jest już za nami. 5  sierpnia 2010 spotkaliśmy się w czteroosobowym gronie w sali GE229.  Wciąż gęsta mgła dookoła, ale wydaje się, że przynajmniej wiemy na czym  stoimy.</p>
+<p>Zaczęliśmy od lekkiego wprowadzenia w technologie P2P, a dokładniej  DHT. W szczególności skupiliśmy się na protokole Kademlia i wydaje się,  że wiemy już zgrubsza jak on działa. Kademlia jest najpopularniejszą  implementacją DHT, chcemy spróbować wykorzystać ją w naszym projekcie.</p>
+<p>Zastanawialiśmy się, czy dałoby się uruchomić węzeł DHT bez  instalowania czegokolwiek na komputerze. Niestety wygląda na to, że  odpowiedź jest negatywna. Jeśli trzeba coś instalować, to czy ma to być  wtyczka do przeglądarki?, czy też jakiś rodzaj samodzielnej aplikacji?  Wydaje się, że pisanie wtyczki jest gorszym rozwiązaniem, bo jest mniej  uniwersalne.</p>
+<p>Na koniec rozdzieliliśmy się zadaniami: Łukasz Makowski ma  przetestować Pythonowe biblioteki do Cademlii, Mateusz Kamola i Piotr  Frankowski mają potestować inne sieci oparte o Cademlie, a piszący te  słowa Bartosz Sawicki pomyśli nad rozproszonym uwierzytelnianiem autorów  treści przechowywanej w systemie.</p>
+<p>Ustaliliśmy, że następne spotkanie odbędzie się pod koniec sierpnia.</p>]]></description>
+			<author>kotik@iem.pw.edu.pl (Administrator)</author>
+			<category>Google Killer</category>
+			<pubDate>Sat, 16 Oct 2010 18:11:32 +0000</pubDate>
+		</item>
+		<item>
+			<title>0xff: Coroczne wydarzenia</title>
+			<link>http://kotik.iem.pw.edu.pl/pomysy/20-0xff-coroczne-wydarzenia</link>
+			<guid>http://kotik.iem.pw.edu.pl/pomysy/20-0xff-coroczne-wydarzenia</guid>
+			<description><![CDATA[<p>Coroczne wydarzenia:</p>
+<h1>Trzecia sobota września - Software Freedom Day</h1>
+<div id="page-content">
+<p>Co roku trzecia sobota września to <a href="http://softwarefreedomday.org/">Software Freedom Day</a>.</p>
+<p>Propozycja jest taka, aby Koło w ten dzień zaznaczało swoje istnienie jakoś szczególnie. Na przykład:</p>
+<ul>
+<li>konkurs dotyczący FLOSS dla uczniów szkół średnich</li>
+<li>jednodniowy kurs komputerowy dla seniorów</li>
+<li>…</li>
+</ul>
+<p>Uzyskanie dofinansowania na tegoroczną imprezę może się nie udać, ale w 2011 Linux będzie obchodził 20 urodziny…</p>
+<p><span class="printuser"><a href="http://www.wikidot.com/user:info/cmaster">cmaster</a></span>: Ja jestem za :)</p>
+</div>
+<p> </p>
+<h1>17 maja - Światowy Dzień Społeczeństwa Informacyjnego</h1>
+<div id="page-content">
+<ul>
+<li><a href="http://www.sdsi.pti.org.pl/">http://www.sdsi.pti.org.pl/</a></li>
+<li><a href="http://www.itu.int/wtisd/index.html">http://www.itu.int/wtisd/index.html</a></li>
+<li><a href="http://en.wikipedia.org/wiki/World_Information_Society_Day">http://en.wikipedia.org/wiki/World_Information_Society_Day</a></li>
+</ul>
+</div>
+<ul>
+</ul>]]></description>
+			<author>kotik@iem.pw.edu.pl (Administrator)</author>
+			<category>Pomysły</category>
+			<pubDate>Sat, 16 Oct 2010 18:03:03 +0000</pubDate>
+		</item>
+		<item>
+			<title>Prezentacja działającego projektu i dokumentacja</title>
+			<link>http://kotik.iem.pw.edu.pl/system-prezentacji-tresci/53-prezentacja-dziaajcego-projektu-i-dokumentacja</link>
+			<guid>http://kotik.iem.pw.edu.pl/system-prezentacji-tresci/53-prezentacja-dziaajcego-projektu-i-dokumentacja</guid>
+			<description><![CDATA[<p>Projekt został zaprezentowany przed komisją i odebrany pozytywnie. Jest szansa, że będzie mógł zostać uruchomiony na wydziale.</p>
+<p>Czas skompletować więc dokumentację projektu:</p>
+<p>dokumentacja API serwera SPT: http://code.google.com/p/spt-kotik/wiki/REST_API</p>]]></description>
+			<author>mic24@o2.pl (Michał Sentarek)</author>
+			<category>System Prezentacji Treści</category>
+			<pubDate>Sun, 01 Apr 2012 20:19:44 +0000</pubDate>
+		</item>
+		<item>
+			<title>Wirtualne Laboratorium Techniki Mikroprocesorowej </title>
+			<link>http://kotik.iem.pw.edu.pl/fool/27-wirtualne-laboratorium-techniki-mikroprocesorowej-</link>
+			<guid>http://kotik.iem.pw.edu.pl/fool/27-wirtualne-laboratorium-techniki-mikroprocesorowej-</guid>
+			<description><![CDATA[<h1 id="toc0"><span>Co robimy?</span></h1>
+<p>Chcemy osiągnąć środowisko, w którym będzie można:</p>
+<ul>
+<li>pisać kod i go assemblować.</li>
+<li>debuggować kod (i widzieć które linie się wykonują w mnemonikach, a nie tylko w heksach).</li>
+<li>otoczyć nasz wirtualny mikroprocesor urządzeniami - diodami,  oscyloskopami, przyciskami, wyświetlaczami i nauczyć go z nimi  współpracować.</li>
+</ul>
+<p>Chcielibyśmy, żeby uruchomienie tego środowiska wymagało jak najmniej  pracy od potencjalnych użytkowników i żeby nasze środowisko było łatwe  do rozszerzenia o dodatkowe urządzenia, które można podłączyć do  mikroprocesora.</p>
+<h1 id="toc1"><span>Dlaczego to robimy?</span></h1>
+<p>Bo takie środowisko nie istnieje :-)</p>
+<p>Istniejące otwarte emulatory:</p>
+<ul>
+<li><a href="http://gsim51.sourceforge.net/">gsim51</a> - służy tylko do uruchamiania już skompilowanych plików hex, wymaga kompilacji.</li>
+<li><a href="http://gsim51.sourceforge.net/">emu8051</a> - dokładnie jak wyżej, ponadto <a href="http://i.imgur.com/jrIcy.png">wygląda paskudnie</a>.</li>
+<li><a href="http://emu51.sourceforge.net/">emu51</a> - wymaga  kompilacji, obecnie przystosowany tylko do windowsa, służy do  uruchamiania plików hex, wymaga allegro w wersji z 2003 roku.</li>
+</ul>
+<h1 id="toc2"><span>Jak to robimy?</span></h1>
+<ul>
+<li>Kod i błędy trzymamy na <a href="https://launchpad.net/fool">Launchpadzie</a>.</li>
+<li>Stosujemy TDD, a testy piszemy w <a href="http://code.google.com/p/js-test-driver/">JS-test-driver</a>.</li>
+<li>Stosujemy <a href="http://javascript.crockford.com/code.html">następujące konwencje zapisu kodu</a>.</li>
+</ul>
+<hr />
+<p>Materiały dla członków zespołu:</p>
+<ul>
+<li><a href="http://www.8052.com/">Dobry tutorial pisania asma na 8051</a></li>
+<li><a href="http://turbo51.com/8051-projects-documentation-tools">baza konkretnej wiedzy - opis rozkazów i opkody</a></li>
+<li><a href="http://code.google.com/p/js-test-driver/">Dokumentacja JS-test-driver</a> - frameworku do testowania JS</li>
+<li><a href="https://developer.mozilla.org/en/A_re-introduction_to_JavaScript">Szybkie wprowadzenie do JS</a></li>
+<li><a href="http://www.jslint.com/">JSLint</a></li>
+<li><a href="http://javascript.crockford.com/code.html">przykładowe code conventions</a>.</li>
+</ul>]]></description>
+			<author>kotik@iem.pw.edu.pl (Administrator)</author>
+			<category>FOOL</category>
+			<pubDate>Sat, 16 Oct 2010 18:17:53 +0000</pubDate>
+		</item>
+		<item>
+			<title>Spotkanie 2</title>
+			<link>http://kotik.iem.pw.edu.pl/google-killer/23-spotkanie-2</link>
+			<guid>http://kotik.iem.pw.edu.pl/google-killer/23-spotkanie-2</guid>
+			<description><![CDATA[<div id="page-content">
+<p>Spotkanie odbyło się w małym składzie (ŁM, BS). Mimo tego  spędzieliśmy bardzo ciekawą godzinę dyskutując i przeszukując sieć w  poszukiwaniu aktualnych artykułów w tematyce P2P. Kilka notatek ku  pamięci:</p>
+<ul>
+<li>duży, aktualnie realizowany projekt europejski w tej tematyce <a href="http://www.p2p-next.org/">http://www.p2p-next.org/</a></li>
+<li>uwierzytelniania w sieciach rozproszonych jest aktywnie badanym tematem. Dużo, aktualnych publikacji.</li>
+<li>trafiliśmy na silny zespół na PWJSTK, który zajmuje się podobnymi zagadnieniami.</li>
+<li>Warto poczytać o DMT, (Distributed Merkle Tree)</li>
+</ul>
+</div>]]></description>
+			<author>kotik@iem.pw.edu.pl (Administrator)</author>
+			<category>Google Killer</category>
+			<pubDate>Sat, 16 Oct 2010 18:12:52 +0000</pubDate>
+		</item>
+		<item>
+			<title>0x12 Uniwersalny sterownik klimatyzatorów podłączan do sieci Internet</title>
+			<link>http://kotik.iem.pw.edu.pl/pomysy/19-0x12-uniwersalny-sterownik-klimatyzatorow-podczan-do-sieci-internet</link>
+			<guid>http://kotik.iem.pw.edu.pl/pomysy/19-0x12-uniwersalny-sterownik-klimatyzatorow-podczan-do-sieci-internet</guid>
+			<description><![CDATA[<p>Uniwersalny sterownik klimatyzatorów podłączan do sieci Internet.  Obsługiwane protokoły: IPv4, IPv6, SNMP. System operacyjny: Contiki.<br /> <a href="http://www.sics.se/contiki/">http://www.sics.se/contiki/</a></p>]]></description>
+			<author>kotik@iem.pw.edu.pl (Administrator)</author>
+			<category>Pomysły</category>
+			<pubDate>Sat, 16 Oct 2010 18:02:27 +0000</pubDate>
+		</item>
+		<item>
+			<title>Specyfikacja Funkcjonalna </title>
+			<link>http://kotik.iem.pw.edu.pl/system-prezentacji-tresci/25-specyfikacja-funkcjonalna-</link>
+			<guid>http://kotik.iem.pw.edu.pl/system-prezentacji-tresci/25-specyfikacja-funkcjonalna-</guid>
+			<description><![CDATA[<div id="page-content">
+<h1 id="toc0"><span>Wyświetlanie</span></h1>
+<ul>
+<li>prezentowanie treści statycznej (tekst, zdjęcia) i dynamicznej (filmy)</li>
+</ul>
+<h2 id="toc1"><span>Treść</span></h2>
+<p>Statyczna - obsługa tekstu, PDFów, obrazów i grafiki wektorowej<br /> Dynamiczna - obsługa filmów (najlepiej wybrać jeden otwarty format)</p>
+<h2 id="toc2"><span>Czas pracy systemu</span></h2>
+<p>System będzie działał w określonych godzinach: autouruchamianie około  godziny 7 rano i wyłączanie w godzinach wieczornych, około 18-20,  łącznie z weekendami (opcja dla zaocznych). Pomijane będą dni  świąteczne.</p>
+<h1 id="toc3"><span>Zarządzanie</span></h1>
+<ul>
+<li>kolejkowanie, losowanie i ustawianie priorytetów treści</li>
+<li>komunikacja zdalna (aktualizowanie prezentowanej treści, zdalne sterowanie)</li>
+<li>treść zorientowana "czasowo"</li>
+</ul>
+<h2 id="toc4"><span>Komunikacja bezprzewodowa</span></h2>
+<p>Pobieranie ze zdalnego serwera aktualizacji, możliwość wejścia do systemu i konfigurowania go w locie, monitorowanie pracy.</p>
+<h2 id="toc5"><span>Treść zorientowana "czasowo"</span></h2>
+<p>Dobrze by było gdyby system orientował się co w danej chwili jest  najbardziej potrzebne - np. reagował na pełne godziny i w przerwach  między zajęciami preferował informacje dotyczące najbliższych zajęć  (przeniesienie sali, odwołany wykład itp.), organizowanych wydarzeniach  itp.</p>
+<p>Sama informacja miałyby też swoją datę przydatności do "spożycia", po której wypadałaby z kolejki.</p>
+</div>]]></description>
+			<author>kotik@iem.pw.edu.pl (Administrator)</author>
+			<category>System Prezentacji Treści</category>
+			<pubDate>Sat, 16 Oct 2010 18:15:58 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

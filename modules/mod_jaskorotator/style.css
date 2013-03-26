@@ -1,0 +1,57 @@
+#rotatingButtons{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 35px;
+    text-align: right;
+}
+
+#rotatingButtons ul{
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+    list-style-type: none;
+}
+
+#rotatingButtons li{
+    float: right;
+    text-align: center;
+    padding: 0 5px;
+}
+
+#rotatingButtons li a{
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-image: url(images/rotationBg.png);
+    background-repeat: no-repeat;
+    background-position: center 20px;
+}
+
+#rotatingButtons li a:hover, #rotatingButtons li a#currentTab{
+    background-position: center 10px;
+}
+
+#rotatingLogo ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-indent: 0;
+}
+
+#rotatingLogo{
+    height: 170px;
+    width: 675px;
+    overflow: hidden;
+}
+
+#rotatingLogo li{
+    height: 170px;
+    overflow: hidden;
+}
+
+/* IE opacity + PNG transparency fix */
+/* ... fucks up validation... */
+#rotatingLogo img{
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader();
+}

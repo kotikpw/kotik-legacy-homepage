@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! 1.5 - Open Source Content Management" -->
+<feed xmlns="http://www.w3.org/2005/Atom"  xml:lang="pl-pl">
+	<title type="text">FOOL</title>
+	<subtitle type="text">KOTIK - Koło Otwartych Technik Informacyjnych i Komputerowych</subtitle>
+	<link rel="alternate" type="text/html" href="http://kotik.iem.pw.edu.pl"/>
+	<id>http://kotik.iem.pw.edu.pl/fool</id>
+	<updated>2013-03-25T22:23:03Z</updated>
+	<generator uri="http://joomla.org" version="1.5">Joomla! 1.5 - Open Source Content Management</generator>
+<link rel="self" type="application/atom+xml" href="http://kotik.iem.pw.edu.pl/fool?format=feed&amp;type=atom" />
+	<entry>
+		<title>Spotkanie 1</title>
+		<link rel="alternate" type="text/html" href="http://kotik.iem.pw.edu.pl/fool/28-spotkanie-1"/>
+		<published>2010-10-16T18:18:58Z</published>
+		<updated>2010-10-16T18:18:58Z</updated>
+		<id>http://kotik.iem.pw.edu.pl/fool/28-spotkanie-1</id>
+		<author>
+			<name>Administrator</name>
+		<email>kotik@iem.pw.edu.pl</email>
+		</author>
+		<summary type="html">&lt;p&gt;Wybrany system kontroli wersji:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Launchpad &lt;a href=&quot;https://launchpad.net/&quot;&gt;https://launchpad.net/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Wybrana metodyka&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TDD &lt;a href=&quot;http://en.wikipedia.org/wiki/Test-driven_development&quot;&gt;http://en.wikipedia.org/wiki/Test-driven_development&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Wymagania funkcjonalne wersji 0.0.1&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;widok główny zawiera domyślnie 4 okna: 
+&lt;ul&gt;
+&lt;li&gt;okno kodu - okno, w którym użytkownik może wprowadzić kod asemblera, zawiera menu (przyciski): 
+&lt;ul&gt;
+&lt;li&gt;uruchom&lt;/li&gt;
+&lt;li&gt;uruchom ze śledzeniem instrukcji&lt;/li&gt;
+&lt;li&gt;wykonaj następną instrukcję&lt;/li&gt;
+&lt;li&gt;przerwij program&lt;/li&gt;
+&lt;li&gt;wznów program&lt;/li&gt;
+&lt;li&gt;zakończ program&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;okno pamięci - pokazuje stan pamięci&lt;/li&gt;
+&lt;li&gt;okno rejestrów - pokazuje stan rejestrów&lt;/li&gt;
+&lt;li&gt;okno schematu - pokazuje predefiniowany schemat mikrokontrolera&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;użytkownik może ukryć/pokazać każde z okien&lt;/li&gt;
+&lt;li&gt;użytkownik może kazać programowi wykonanie wprowadzonego kodu  asemblera (wybiera opcję &quot;uruchom&quot;, &quot;uruchom ze śledzeniem instrukcji&quot;  lub &quot;wykonaj następną instrukcję&quot;) 
+&lt;ul&gt;
+&lt;li&gt;program wykonuje kod wprowadzony w oknie kodu zmieniając stan pamięci, rejestrów i wyjścia&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;użytkownik może na bieżąco śledzić w oknie kodu wykonywane  instrukcje (wybiera opcję &quot;uruchom ze śledzeniem instrukcji&quot;, przydałoby  się opóźnić &quot;skok&quot; do następnej instrukcji, by animacja była płynna)&lt;/li&gt;
+&lt;li&gt;użytkownik może zatrzymać działanie programu w dowolnej chwili  (wybiera opcję &quot;przerwij program&quot;) a następnie wznowić jego działanie z  tego samego momentu (wybiera opcję &quot;wznów program&quot;)&lt;/li&gt;
+&lt;li&gt;użytkownik może zakończyć działanie programu w dowolnej chwili (wybiera opcję &quot;zakończ program&quot;)&lt;/li&gt;
+&lt;li&gt;użytkownik może wykonać jedną, następną instrukcję (wybiera opcję &quot;wykonaj następną instrukcję&quot;)&lt;/li&gt;
+&lt;li&gt;program powinien być kompatybilny z rzeczywistym procesorem  (wprowadzony kod powinien działać tak samo w naszym emulatorze, w RIDE i  na rzeczywistym procesorze)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Jak to zrobimy (i w jakiej kolejności ;))?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;stworzymy najpierw emulator procesora 8051 (moduł czytający z  pamięci kolejne opkody i wykonujący operacje na pamięci, rejestrach  itd.)&lt;/li&gt;
+&lt;li&gt;kod asemblera będzie tłumaczony na kod maszynowy (asemblacja) i umieszczany w pamięci&lt;/li&gt;
+&lt;li&gt;zaprojektujemy GUI używając odpowiedniej biblioteki (np. jQuery UI): okienka kodu, pamięci i rejestrów.&lt;/li&gt;
+&lt;li&gt;początki interfejsu do tworzenia układów (flash)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Oczywiście zanim przystąpimy do pisania właściwego kodu będziemy,  zgodnie z TDD, pisać odpowiednie testy (może potem wrzuci się tu linka z  jakimś artykułem o dobrych i złych praktykach pisania testów w TDD).&lt;/p&gt;</summary>
+		<content type="html">&lt;p&gt;Wybrany system kontroli wersji:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Launchpad &lt;a href=&quot;https://launchpad.net/&quot;&gt;https://launchpad.net/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Wybrana metodyka&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TDD &lt;a href=&quot;http://en.wikipedia.org/wiki/Test-driven_development&quot;&gt;http://en.wikipedia.org/wiki/Test-driven_development&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Wymagania funkcjonalne wersji 0.0.1&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;widok główny zawiera domyślnie 4 okna: 
+&lt;ul&gt;
+&lt;li&gt;okno kodu - okno, w którym użytkownik może wprowadzić kod asemblera, zawiera menu (przyciski): 
+&lt;ul&gt;
+&lt;li&gt;uruchom&lt;/li&gt;
+&lt;li&gt;uruchom ze śledzeniem instrukcji&lt;/li&gt;
+&lt;li&gt;wykonaj następną instrukcję&lt;/li&gt;
+&lt;li&gt;przerwij program&lt;/li&gt;
+&lt;li&gt;wznów program&lt;/li&gt;
+&lt;li&gt;zakończ program&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;okno pamięci - pokazuje stan pamięci&lt;/li&gt;
+&lt;li&gt;okno rejestrów - pokazuje stan rejestrów&lt;/li&gt;
+&lt;li&gt;okno schematu - pokazuje predefiniowany schemat mikrokontrolera&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;użytkownik może ukryć/pokazać każde z okien&lt;/li&gt;
+&lt;li&gt;użytkownik może kazać programowi wykonanie wprowadzonego kodu  asemblera (wybiera opcję &quot;uruchom&quot;, &quot;uruchom ze śledzeniem instrukcji&quot;  lub &quot;wykonaj następną instrukcję&quot;) 
+&lt;ul&gt;
+&lt;li&gt;program wykonuje kod wprowadzony w oknie kodu zmieniając stan pamięci, rejestrów i wyjścia&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;użytkownik może na bieżąco śledzić w oknie kodu wykonywane  instrukcje (wybiera opcję &quot;uruchom ze śledzeniem instrukcji&quot;, przydałoby  się opóźnić &quot;skok&quot; do następnej instrukcji, by animacja była płynna)&lt;/li&gt;
+&lt;li&gt;użytkownik może zatrzymać działanie programu w dowolnej chwili  (wybiera opcję &quot;przerwij program&quot;) a następnie wznowić jego działanie z  tego samego momentu (wybiera opcję &quot;wznów program&quot;)&lt;/li&gt;
+&lt;li&gt;użytkownik może zakończyć działanie programu w dowolnej chwili (wybiera opcję &quot;zakończ program&quot;)&lt;/li&gt;
+&lt;li&gt;użytkownik może wykonać jedną, następną instrukcję (wybiera opcję &quot;wykonaj następną instrukcję&quot;)&lt;/li&gt;
+&lt;li&gt;program powinien być kompatybilny z rzeczywistym procesorem  (wprowadzony kod powinien działać tak samo w naszym emulatorze, w RIDE i  na rzeczywistym procesorze)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Jak to zrobimy (i w jakiej kolejności ;))?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;stworzymy najpierw emulator procesora 8051 (moduł czytający z  pamięci kolejne opkody i wykonujący operacje na pamięci, rejestrach  itd.)&lt;/li&gt;
+&lt;li&gt;kod asemblera będzie tłumaczony na kod maszynowy (asemblacja) i umieszczany w pamięci&lt;/li&gt;
+&lt;li&gt;zaprojektujemy GUI używając odpowiedniej biblioteki (np. jQuery UI): okienka kodu, pamięci i rejestrów.&lt;/li&gt;
+&lt;li&gt;początki interfejsu do tworzenia układów (flash)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Oczywiście zanim przystąpimy do pisania właściwego kodu będziemy,  zgodnie z TDD, pisać odpowiednie testy (może potem wrzuci się tu linka z  jakimś artykułem o dobrych i złych praktykach pisania testów w TDD).&lt;/p&gt;</content>
+	</entry>
+	<entry>
+		<title>Wirtualne Laboratorium Techniki Mikroprocesorowej </title>
+		<link rel="alternate" type="text/html" href="http://kotik.iem.pw.edu.pl/fool/27-wirtualne-laboratorium-techniki-mikroprocesorowej-"/>
+		<published>2010-10-16T18:17:53Z</published>
+		<updated>2010-10-16T18:17:53Z</updated>
+		<id>http://kotik.iem.pw.edu.pl/fool/27-wirtualne-laboratorium-techniki-mikroprocesorowej-</id>
+		<author>
+			<name>Administrator</name>
+		<email>kotik@iem.pw.edu.pl</email>
+		</author>
+		<summary type="html">&lt;h1 id=&quot;toc0&quot;&gt;&lt;span&gt;Co robimy?&lt;/span&gt;&lt;/h1&gt;
+&lt;p&gt;Chcemy osiągnąć środowisko, w którym będzie można:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;pisać kod i go assemblować.&lt;/li&gt;
+&lt;li&gt;debuggować kod (i widzieć które linie się wykonują w mnemonikach, a nie tylko w heksach).&lt;/li&gt;
+&lt;li&gt;otoczyć nasz wirtualny mikroprocesor urządzeniami - diodami,  oscyloskopami, przyciskami, wyświetlaczami i nauczyć go z nimi  współpracować.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Chcielibyśmy, żeby uruchomienie tego środowiska wymagało jak najmniej  pracy od potencjalnych użytkowników i żeby nasze środowisko było łatwe  do rozszerzenia o dodatkowe urządzenia, które można podłączyć do  mikroprocesora.&lt;/p&gt;
+&lt;h1 id=&quot;toc1&quot;&gt;&lt;span&gt;Dlaczego to robimy?&lt;/span&gt;&lt;/h1&gt;
+&lt;p&gt;Bo takie środowisko nie istnieje :-)&lt;/p&gt;
+&lt;p&gt;Istniejące otwarte emulatory:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://gsim51.sourceforge.net/&quot;&gt;gsim51&lt;/a&gt; - służy tylko do uruchamiania już skompilowanych plików hex, wymaga kompilacji.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://gsim51.sourceforge.net/&quot;&gt;emu8051&lt;/a&gt; - dokładnie jak wyżej, ponadto &lt;a href=&quot;http://i.imgur.com/jrIcy.png&quot;&gt;wygląda paskudnie&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://emu51.sourceforge.net/&quot;&gt;emu51&lt;/a&gt; - wymaga  kompilacji, obecnie przystosowany tylko do windowsa, służy do  uruchamiania plików hex, wymaga allegro w wersji z 2003 roku.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;toc2&quot;&gt;&lt;span&gt;Jak to robimy?&lt;/span&gt;&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Kod i błędy trzymamy na &lt;a href=&quot;https://launchpad.net/fool&quot;&gt;Launchpadzie&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Stosujemy TDD, a testy piszemy w &lt;a href=&quot;http://code.google.com/p/js-test-driver/&quot;&gt;JS-test-driver&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Stosujemy &lt;a href=&quot;http://javascript.crockford.com/code.html&quot;&gt;następujące konwencje zapisu kodu&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;Materiały dla członków zespołu:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.8052.com/&quot;&gt;Dobry tutorial pisania asma na 8051&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://turbo51.com/8051-projects-documentation-tools&quot;&gt;baza konkretnej wiedzy - opis rozkazów i opkody&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://code.google.com/p/js-test-driver/&quot;&gt;Dokumentacja JS-test-driver&lt;/a&gt; - frameworku do testowania JS&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en/A_re-introduction_to_JavaScript&quot;&gt;Szybkie wprowadzenie do JS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.jslint.com/&quot;&gt;JSLint&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://javascript.crockford.com/code.html&quot;&gt;przykładowe code conventions&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;</summary>
+		<content type="html">&lt;h1 id=&quot;toc0&quot;&gt;&lt;span&gt;Co robimy?&lt;/span&gt;&lt;/h1&gt;
+&lt;p&gt;Chcemy osiągnąć środowisko, w którym będzie można:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;pisać kod i go assemblować.&lt;/li&gt;
+&lt;li&gt;debuggować kod (i widzieć które linie się wykonują w mnemonikach, a nie tylko w heksach).&lt;/li&gt;
+&lt;li&gt;otoczyć nasz wirtualny mikroprocesor urządzeniami - diodami,  oscyloskopami, przyciskami, wyświetlaczami i nauczyć go z nimi  współpracować.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Chcielibyśmy, żeby uruchomienie tego środowiska wymagało jak najmniej  pracy od potencjalnych użytkowników i żeby nasze środowisko było łatwe  do rozszerzenia o dodatkowe urządzenia, które można podłączyć do  mikroprocesora.&lt;/p&gt;
+&lt;h1 id=&quot;toc1&quot;&gt;&lt;span&gt;Dlaczego to robimy?&lt;/span&gt;&lt;/h1&gt;
+&lt;p&gt;Bo takie środowisko nie istnieje :-)&lt;/p&gt;
+&lt;p&gt;Istniejące otwarte emulatory:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://gsim51.sourceforge.net/&quot;&gt;gsim51&lt;/a&gt; - służy tylko do uruchamiania już skompilowanych plików hex, wymaga kompilacji.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://gsim51.sourceforge.net/&quot;&gt;emu8051&lt;/a&gt; - dokładnie jak wyżej, ponadto &lt;a href=&quot;http://i.imgur.com/jrIcy.png&quot;&gt;wygląda paskudnie&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://emu51.sourceforge.net/&quot;&gt;emu51&lt;/a&gt; - wymaga  kompilacji, obecnie przystosowany tylko do windowsa, służy do  uruchamiania plików hex, wymaga allegro w wersji z 2003 roku.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;toc2&quot;&gt;&lt;span&gt;Jak to robimy?&lt;/span&gt;&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Kod i błędy trzymamy na &lt;a href=&quot;https://launchpad.net/fool&quot;&gt;Launchpadzie&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Stosujemy TDD, a testy piszemy w &lt;a href=&quot;http://code.google.com/p/js-test-driver/&quot;&gt;JS-test-driver&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Stosujemy &lt;a href=&quot;http://javascript.crockford.com/code.html&quot;&gt;następujące konwencje zapisu kodu&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;Materiały dla członków zespołu:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.8052.com/&quot;&gt;Dobry tutorial pisania asma na 8051&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://turbo51.com/8051-projects-documentation-tools&quot;&gt;baza konkretnej wiedzy - opis rozkazów i opkody&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://code.google.com/p/js-test-driver/&quot;&gt;Dokumentacja JS-test-driver&lt;/a&gt; - frameworku do testowania JS&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en/A_re-introduction_to_JavaScript&quot;&gt;Szybkie wprowadzenie do JS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.jslint.com/&quot;&gt;JSLint&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://javascript.crockford.com/code.html&quot;&gt;przykładowe code conventions&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;</content>
+	</entry>
+</feed>
